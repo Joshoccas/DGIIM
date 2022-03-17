@@ -1,0 +1,5 @@
+First rectangle is [(2,5) - (5,2)] 
+Type second rectangle: 
+Calculating intersection of: [(2,5) - (5,2)]  and [(5,5) - (8,0)] 
+The intersection is: [(5,5) - (5,2)] 
+Reading points...(5,5) fall within the intersection (1 total)

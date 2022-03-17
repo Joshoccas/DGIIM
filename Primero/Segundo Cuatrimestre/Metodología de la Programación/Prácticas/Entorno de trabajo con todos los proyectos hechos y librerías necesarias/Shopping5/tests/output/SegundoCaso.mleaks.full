@@ -1,0 +1,21 @@
+MEMORY LEAK REPORT BY Valgrind 
+
+vie 11 jun 2021 01:01:33 CEST
+
+
+==4346== Memcheck, a memory error detector
+==4346== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4346== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4346== Command: ./dist/Debug/GNU-Linux/shopping5 -input ./data/SegundoCaso.dataset -events 400 -K 100 -type cart
+==4346== 
+
+[recommendations(Top recommendations)] 10 almea( 0.1279) beauty-free( 0.1153) biofollica( 0.0695) deoproce( 0.0958) estrade( 0.0986) likato( 0.0886) missha( 0.1032) profhenna( 0.1079) roubloff( 0.1216) ypsed( 0.0718) 
+==4346== 
+==4346== HEAP SUMMARY:
+==4346==     in use at exit: 0 bytes in 0 blocks
+==4346==   total heap usage: 3,153 allocs, 3,153 frees, 613,531 bytes allocated
+==4346== 
+==4346== All heap blocks were freed -- no leaks are possible
+==4346== 
+==4346== For lists of detected and suppressed errors, rerun with: -s
+==4346== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

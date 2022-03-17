@@ -1,0 +1,325 @@
+// EXAMEN 1.1
+Jugador::Jugador(int id, const std::string & nombre, int trofeos, const Historico & historial){
+    this->id = id;
+    this->nombre = nombre;
+    this->trofeos = trofeos;
+    this->historial = historial;
+}
+
+// EXAMEN 1.2
+/**
+ * El destructor no es necesario en esta clase. Nos sirve el de por defecto 
+ * proporcionado por C++
+ *
+Jugador::~Jugador{
+    
+}
+*/
+
+// EXAMEN 1.2
+Clan::~Clan() {
+    liberarMemoria();
+}
+
+// EXAMEN 1.2
+void Clan::liberarMemoria() {
+    delete[] jugadores;
+}
+
+
+// EXAMEN 1.3
+/**
+ * El constructor de copia no es necesario en esta clase. Nos sirve el de por defecto 
+ * proporcionado por C++
+Jugador::Jugador(const Jugador &otro){
+    
+}
+*/
+
+// EXAMEN 1.3
+/**
+ * El operador de asignación no es necesario en esta clase. Nos sirve el de por defecto 
+ * proporcionado por C++
+Jugador& Jugador::operator=(const Jugador& otro) { 
+}
+*/
+
+// EXAMEN 1.3
+void Clan::reservarMemoria(int n) {
+    if (n > 0) {
+        numJugadores = n;
+        jugadores = new Jugador[n];
+    } else {
+        numJugadores = 0;
+        jugadores = nullptr;
+    }
+}
+
+// EXAMEN 1.3
+void Clan::copiar(const Clan& otro) {
+    numJugadores = otro.numJugadores;
+    for (int i = 0; i < otro.numJugadores; i++) {
+        jugadores[i] = otro.jugadores[i];
+    }
+}
+
+// EXAMEN 1.3
+Clan::Clan(const Clan &otro) {
+    reservarMemoria(otro.numJugadores);
+    copiar(otro);
+}
+
+// EXAMEN 1.3
+Clan& Clan::operator=(const Clan& otro) { 
+    if (this != &otro) {
+        liberarMemoria();
+        reservarMemoria(otro.numJugadores);
+        copiar(otro);
+    }
+    return *this;
+}
+
+// EXAMEN 1.4
+/**
+ * Es obligatorio hacer este constructor pues ya tenemos uno con 4 argumentos
+ */
+Jugador::Jugador() {
+    id = 0;
+    nombre = "";
+    trofeos = 0;
+    // historial se crea automáticamente con constructor por defecto de Historico
+}
+
+// EXAMEN 1.4
+Clan::Clan() {
+    creaVacio();
+}
+
+// EXAMEN 1.4
+void Clan::creaVacio(){
+    id = 0;
+    nombre = "";
+    jugadores = nullptr;
+    numJugadores;
+}
+
+// EXAMEN 2.1.a
+Clan& Clan::operator+=(const Jugador &jugador) {
+    Jugador* auxJugadores;
+    
+    auxJugadores = new Jugador[this->numJugadores+1];
+    for(int i=0; i<this->numJugadores; i++){
+        auxJugadores[i] = this->jugadores[i];
+    }
+    auxJugadores[this->numJugadores] = jugador;
+    
+    liberarMemoria();
+    this->jugadores = auxJugadores;
+    this->numJugadores++;
+    
+    return *this;
+}
+
+// EXAMEN 2.1.b
+Clan& Clan::operator+=(const Clan &clan) {
+    Jugador* auxJugadores;
+    
+    auxJugadores = new Jugador[this->numJugadores+clan.numJugadores];
+    for(int i=0; i<this->numJugadores; i++){
+        auxJugadores[i] = this->jugadores[i];
+    }
+    for(int i=0; i<clan.numJugadores; i++){
+         auxJugadores[this->numJugadores+i] = clan.jugadores[i];
+    }
+    
+    liberarMemoria();
+    this->jugadores = auxJugadores;
+    this->numJugadores+=clan.numJugadores;
+    
+    return *this;
+}
+
+// EXAMEN 2.2
+Jugador& Jugador::operator+=(const Batalla &batalla) {
+    this->historial+=batalla;  
+    
+    return *this;
+}
+
+// EXAMEN 2.2
+Historico& Historico::operator+=(const Batalla &batalla){
+    Batalla* auxBatallas;
+    
+    auxBatallas = new Batalla[this->num_batallas+1];
+    
+    auxBatallas[0] = batalla;
+    for(int i=0; i<this->num_batallas; i++){
+        auxBatallas[i+1] = this->batallas[i];
+    }
+    
+    liberarMemoria();
+    this->batallas = auxBatallas;
+    this->num_batallas++;
+    return *this;
+}
+
+// EXAMEN 2.3
+Batalla & Jugador::operator[](int indice) {
+    return historial[indice];
+}
+
+// EXAMEN 2.3
+const Batalla & Jugador::operator[](int indice) const {
+    return historial[indice];
+}
+
+// EXAMEN 2.3
+Jugador & Clan::operator[](int indice) {
+    return jugadores[indice];
+}
+
+// EXAMEN 2.3
+const Jugador & Clan::operator[](int indice) const {
+    return jugadores[indice];
+}
+
+// EXAMEN 3.1
+std::ostream& operator<<(std::ostream& flujo, const Jugador& jugador) { 
+    flujo << jugador.id << " " << jugador.nombre << endl;
+    flujo << jugador.trofeos << endl;
+    flujo << jugador.historial;
+    
+    return flujo;
+}
+
+// EXAMEN 3.1
+std::istream& operator>>(std::istream& flujo, Jugador& jugador) {
+    flujo >> jugador.id;
+    getline(flujo, jugador.nombre);
+    flujo >> jugador.trofeos;
+    flujo >> jugador.historial;
+    
+    return flujo;
+}
+
+// EXAMEN 3.1
+std::ostream& operator<<(std::ostream& flujo, const Clan& clan) { 
+    flujo << clan.id << " " << clan.nombre << endl;
+    flujo << clan.numJugadores << endl;
+    
+    for (int i = 0; i < clan.numJugadores; i++) {
+        flujo << clan[i] << endl;
+    }
+    return flujo;
+}
+
+// EXAMEN 3.1
+std::istream& operator>>(std::istream& flujo, Clan& clan) {   
+    clan.liberarMemoria();
+    
+    flujo >> clan.id;
+    getline(flujo, clan.nombre);
+    flujo >> clan.numJugadores;
+    
+    clan.reservarMemoria(clan.numJugadores);
+    for(int i=0; i<clan.numJugadores; i++){
+        flujo >> clan.jugadores[i];
+    }
+    
+    return flujo;
+}
+
+// EXAMEN 3.2
+Clan::Clan(const string& nombre) {
+    ifstream flujo;
+    string cadena;
+    
+    flujo.open(nombre.c_str());
+    if(flujo){
+        flujo >> cadena;
+        if(cadena != "FICHEROCLAN"){
+            cerr << "Parece que el fichero no contiene información de un clan";
+            exit(1);
+        }
+        else{
+            jugadores = nullptr;
+            flujo >> *this;
+        }
+    }
+    else{
+        cerr << "No pudo abrirse el fichero";
+        exit(1);
+    }
+}
+
+// EXAMEN 4.1
+double Jugador::sumaTrofeos() const{
+    double total=0.0;
+       
+    for(int i=0; i<historial.numBatallas(); i++){
+        total += historial[i].getTrofeos(); 
+    } 
+
+    return total;
+}
+// EXAMEN 4.1
+double Jugador::eficiencia() const{        
+    if(historial.numBatallas()==0)
+        return 0;
+    else
+        return sumaTrofeos()/historial.numBatallas();
+}
+
+// EXAMEN 4.2
+double Clan::eficiencia() const{
+    double total=0;
+    
+    for(int i=0; i<numJugadores; i++){
+        total += jugadores->sumaTrofeos(); 
+    }
+    if(numJugadores==0)
+        return 0;
+    else
+        return total/numJugadores;
+}
+
+// EXAMEN 5
+int Clan::getNumeroJugadores() const{
+    return numJugadores;
+}
+
+// EXAMEN 5
+string Clan::getNombre() const{
+    
+    return nombre;
+}
+
+// EXAMEN 5
+#include <iostream>
+#include "Clan.h"
+using namespace std;
+int main(int argc, char* argv[]) {
+    if (argc >= 2) {
+        double umbral = stod(argv[1]);
+        for (int i = 2; i < argc; i++) {
+            Clan clan(argv[i]);
+            
+            //cout << clan;
+            
+            cout << "CLAN: " << clan.getNombre() << 
+                    "  Eficiencia media del clan:" << clan.eficiencia() << endl;
+            for (int j = 0; j < clan.getNumeroJugadores(); j++) {
+                if (clan[j].eficiencia() >= umbral) { // if jugador j es máster
+                    cout << "Eficiencia del jugador: " << clan[j].eficiencia() << endl; // Mostar eficiencia
+                    cout << clan[j]<<endl; // Mostrar identificador, nombre, número trofeos e historial
+                }
+            }
+            cout << endl << endl;
+        }
+    } else {
+        cout << "Error, debe ejecutar proporcionando los argumentos: umbral ficheroClan1 ficheroClan2 ..." << endl;
+    }
+    return 0;
+}
+
+

@@ -1,0 +1,294 @@
+\hypertarget{classRectangle}{}\section{Rectangle Class Reference}
+\label{classRectangle}\index{Rectangle@{Rectangle}}
+
+
+To represent a rectangle in a two-\/dimensional space as a pair or points, the top-\/left corner and the bottom-\/right one.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}\label{classRectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}} 
+\hyperlink{classRectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{Rectangle} ()
+\begin{DoxyCompactList}\small\item\em Basic constructor. \end{DoxyCompactList}\item 
+\hyperlink{classRectangle_a1546993e9fc10b8d128f4a85ed68c653}{Rectangle} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classRectangle_a31c4b9fc0d1ddf912f114da494e50205}{set\+Geometry} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Initializes the data of the rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{classRectangle_af8d143717fa47878690b12705a687b38}{set\+Geometry} (const \hyperlink{classPoint2D}{Point2D} \&tl, const \hyperlink{classPoint2D}{Point2D} \&br)
+\begin{DoxyCompactList}\small\item\em Initializes the data of the rectangle. \end{DoxyCompactList}\item 
+\hyperlink{classPoint2D}{Point2D} \hyperlink{classRectangle_a812afd6deed0cdec0b4ad7b2bd93871d}{get\+Top\+Left} () const
+\begin{DoxyCompactList}\small\item\em Queries the top-\/left corner. \end{DoxyCompactList}\item 
+\hyperlink{classPoint2D}{Point2D} \hyperlink{classRectangle_a5f30a92f3fc197dda50d9e59995d3ac1}{get\+Bottom\+Right} () const
+\begin{DoxyCompactList}\small\item\em Queries the bottom-\/right corner. \end{DoxyCompactList}\item 
+bool \hyperlink{classRectangle_af732bce8c96d2469994825e9a87dbe5f}{is\+Empty} () const
+\begin{DoxyCompactList}\small\item\em For a rectangle to be valid this condition must hold topleft.\+get\+X() $<$ = bottomright.\+get\+X() \&\& topleft.\+get\+Y() $>$ = bottomright.\+get\+Y() otherwise it is an empty (incorrect) rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRectangle_af6973ed3094f9dbabeadb071772fa76d}\label{classRectangle_af6973ed3094f9dbabeadb071772fa76d}} 
+void \hyperlink{classRectangle_af6973ed3094f9dbabeadb071772fa76d}{read} ()
+\begin{DoxyCompactList}\small\item\em Reads the two points of the rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRectangle_a4e315c59754599c74e99e8b31f7031a0}\label{classRectangle_a4e315c59754599c74e99e8b31f7031a0}} 
+void \hyperlink{classRectangle_a4e315c59754599c74e99e8b31f7031a0}{print} () const
+\begin{DoxyCompactList}\small\item\em Prints the rectangle in the form \mbox{[}\hyperlink{classPoint2D}{Point2D} -\/ \hyperlink{classPoint2D}{Point2D}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRectangle}{Rectangle} \hyperlink{classRectangle_a888d2b0113947b4461107bb02b28799d}{do\+Overlap} (const \hyperlink{classRectangle}{Rectangle} \&r1, const \hyperlink{classRectangle}{Rectangle} \&r2)
+\begin{DoxyCompactList}\small\item\em Calculates the rectangle intersection of the two given rectangles. If there is no intersection, an empty rectangle is returned instead. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+To represent a rectangle in a two-\/dimensional space as a pair or points, the top-\/left corner and the bottom-\/right one. 
+
+Definition at line 97 of file main.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRectangle_a1546993e9fc10b8d128f4a85ed68c653}\label{classRectangle_a1546993e9fc10b8d128f4a85ed68c653}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & XY Coordinates of top-\/left corner \\
+\hline
+{\em y} & \\
+\hline
+{\em w} & Width of the rectangle \\
+\hline
+{\em h} & Height of the rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+113                                           \{
+114         topleft.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(x);
+115         topleft.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(y);
+116         bottomright.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(x+w-1);
+117         bottomright.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(y+h-1);
+118         \textcolor{comment}{// setGeometry(x,y,w,h);}
+119     \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classRectangle_a1546993e9fc10b8d128f4a85ed68c653_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRectangle_a5f30a92f3fc197dda50d9e59995d3ac1}\label{classRectangle_a5f30a92f3fc197dda50d9e59995d3ac1}} 
+\index{Rectangle@{Rectangle}!get\+Bottom\+Right@{get\+Bottom\+Right}}
+\index{get\+Bottom\+Right@{get\+Bottom\+Right}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{get\+Bottom\+Right()}{getBottomRight()}}
+{\footnotesize\ttfamily \hyperlink{classPoint2D}{Point2D} Rectangle\+::get\+Bottom\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Queries the bottom-\/right corner. 
+
+\begin{DoxyReturn}{Returns}
+The point 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+154                                    \{
+155         \textcolor{keywordflow}{return} bottomright;
+156     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRectangle_a812afd6deed0cdec0b4ad7b2bd93871d}\label{classRectangle_a812afd6deed0cdec0b4ad7b2bd93871d}} 
+\index{Rectangle@{Rectangle}!get\+Top\+Left@{get\+Top\+Left}}
+\index{get\+Top\+Left@{get\+Top\+Left}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{get\+Top\+Left()}{getTopLeft()}}
+{\footnotesize\ttfamily \hyperlink{classPoint2D}{Point2D} Rectangle\+::get\+Top\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Queries the top-\/left corner. 
+
+\begin{DoxyReturn}{Returns}
+The point 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+147                                \{
+148         \textcolor{keywordflow}{return} topleft;
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRectangle_af732bce8c96d2469994825e9a87dbe5f}\label{classRectangle_af732bce8c96d2469994825e9a87dbe5f}} 
+\index{Rectangle@{Rectangle}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Rectangle\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+For a rectangle to be valid this condition must hold topleft.\+get\+X() $<$ = bottomright.\+get\+X() \&\& topleft.\+get\+Y() $>$ = bottomright.\+get\+Y() otherwise it is an empty (incorrect) rectangle. 
+
+\begin{DoxyReturn}{Returns}
+Whether the rectangle is empty or not 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+163                          \{
+164         \textcolor{keywordflow}{return} topleft.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()>bottomright.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}() || topleft.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}() < bottomright.
+      \hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}();
+165     \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classRectangle_af732bce8c96d2469994825e9a87dbe5f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classRectangle_a31c4b9fc0d1ddf912f114da494e50205}\label{classRectangle_a31c4b9fc0d1ddf912f114da494e50205}} 
+\index{Rectangle@{Rectangle}!set\+Geometry@{set\+Geometry}}
+\index{set\+Geometry@{set\+Geometry}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{set\+Geometry()}{setGeometry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rectangle\+::set\+Geometry (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the data of the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & XY Coordinates of top-\/left corner \\
+\hline
+{\em y} & \\
+\hline
+{\em w} & Width of the rectangle \\
+\hline
+{\em h} & Height of the rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+128                                                  \{
+129         topleft.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(x);
+130         topleft.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(y);
+131         bottomright.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(x+w);
+132         bottomright.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(y-h);
+133     \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classRectangle_a31c4b9fc0d1ddf912f114da494e50205_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classRectangle_af8d143717fa47878690b12705a687b38}\label{classRectangle_af8d143717fa47878690b12705a687b38}} 
+\index{Rectangle@{Rectangle}!set\+Geometry@{set\+Geometry}}
+\index{set\+Geometry@{set\+Geometry}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{set\+Geometry()}{setGeometry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rectangle\+::set\+Geometry (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint2D}{Point2D} \&}]{tl,  }\item[{const \hyperlink{classPoint2D}{Point2D} \&}]{br }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the data of the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tl} & Top-\/left point \\
+\hline
+{\em br} & Bottom-\/right corner \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 139 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+139                                                            \{
+140         topleft = tl;
+141         bottomright = br;
+142     \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classRectangle_a888d2b0113947b4461107bb02b28799d}\label{classRectangle_a888d2b0113947b4461107bb02b28799d}} 
+\index{Rectangle@{Rectangle}!do\+Overlap@{do\+Overlap}}
+\index{do\+Overlap@{do\+Overlap}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{do\+Overlap}{doOverlap}}
+{\footnotesize\ttfamily \hyperlink{classRectangle}{Rectangle} do\+Overlap (\begin{DoxyParamCaption}\item[{const \hyperlink{classRectangle}{Rectangle} \&}]{r1,  }\item[{const \hyperlink{classRectangle}{Rectangle} \&}]{r2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Calculates the rectangle intersection of the two given rectangles. If there is no intersection, an empty rectangle is returned instead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & One rectangle \\
+\hline
+{\em r2} & Other rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rectangle given by the intersection of {\ttfamily r1} and {\ttfamily r2} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is an external function to the class \hyperlink{classRectangle}{Rectangle} but since it is also friend, this function is allowed access to private data/methods 
+\end{DoxyNote}
+
+
+Definition at line 198 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+198                                                                \{
+199     \hyperlink{classRectangle}{Rectangle} result;
+200     \hyperlink{classPoint2D}{Point2D} rTL, rBR;
+201     \textcolor{comment}{/* NO FRIEND}
+202 \textcolor{comment}{        rTL.setX(max(r1.getTopLeft().getX(),r2.getTopLeft().getX()));}
+203 \textcolor{comment}{        rTL.setY(max(r1.getTopLeft().getY(),r2.getTopLeft().getY()));}
+204 \textcolor{comment}{        rBR.setX(min(r1.getBottomRight().getX(),r2.getBottomRight().getX()));}
+205 \textcolor{comment}{        rBR.setY(min(r1.getBottomRight().getY(),r2.getBottomRight().getY()));}
+206 \textcolor{comment}{     */}
+207     rTL.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(max(r1.topleft.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}(),r2.topleft.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()));
+208     rTL.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(min(r1.topleft.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}(),r2.topleft.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}()));
+209     rBR.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(min(r1.bottomright.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}(),r2.bottomright.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()));
+210     rBR.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(max(r1.bottomright.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}(),r2.bottomright.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}()));
+211     result.\hyperlink{classRectangle_a31c4b9fc0d1ddf912f114da494e50205}{setGeometry}(rTL,rBR);
+212     \textcolor{keywordflow}{return} result; \textcolor{comment}{// Read more}
+213 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{main_8cpp}{main.\+cpp}\end{DoxyCompactItemize}

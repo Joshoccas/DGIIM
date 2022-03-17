@@ -1,0 +1,7 @@
+<map id="doOverlap" name="doOverlap">
+<area shape="rect" id="node2" href="$classPoint2D.html#af268842e8f2e6072ffe345dc2f322046" title="Initializes the X coordinate. " alt="" coords="347,46,451,73"/>
+<area shape="rect" id="node3" href="$classPoint2D.html#a5cb1c2584e5b2bada0226a3e32aa2b1a" title="Queries the X coordinate. " alt="" coords="165,33,269,59"/>
+<area shape="rect" id="node4" href="$classPoint2D.html#a0e08240b54e6eaae92c979082da1c91c" title="Initializes the Y coordinate. " alt="" coords="347,122,451,149"/>
+<area shape="rect" id="node5" href="$classPoint2D.html#a53d10f2e460c47a493a3fbadfbafbb64" title="Queries the Y coordinate. " alt="" coords="165,134,269,161"/>
+<area shape="rect" id="node6" href="$classRectangle.html#a31c4b9fc0d1ddf912f114da494e50205" title="Initializes the data of the rectangle. " alt="" coords="135,83,299,110"/>
+</map>

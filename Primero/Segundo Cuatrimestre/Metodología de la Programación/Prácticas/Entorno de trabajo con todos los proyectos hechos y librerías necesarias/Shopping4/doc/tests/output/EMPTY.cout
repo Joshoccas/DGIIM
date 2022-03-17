@@ -1,0 +1,33 @@
+
+Please type the input file name: 
+Please type the number of records to read: Please select the field to index for (UserID, Brand): 
+Please select the field to filter with (DateTime, UserID, Brand, Type): 
+Please indicate the output file (empty for no output file): 
+Reading from ./data/ECommerce5.dataset
+
+Read 0 records from file ./data/ECommerce5.dataset
+Main Index by UserID
+0 pairs 
+amount :0
+
+Activity found: SUNDAY(0) MONDAY(0) TUESDAY(0) WEDNESDAY(0) THURSDAY(0) FRIDAY(0) SATURDAY(0)
+
+Events/day
+         0         0         0         0         0         0         0         0
+
+    SUNDAY    MONDAY   TUESDAY WEDNESDAY  THURSDAY    FRIDAY  SATURDAY
+
+
+DateTime (traffic)
+         0
+
+
+
+
+DateTime (amount)
+         0
+
+
+
+
+Highest traffic choice () with -1 hits 

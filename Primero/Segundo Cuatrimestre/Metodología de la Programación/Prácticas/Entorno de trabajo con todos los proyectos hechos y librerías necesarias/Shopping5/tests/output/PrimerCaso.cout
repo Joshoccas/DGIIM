@@ -1,0 +1,26 @@
+
+Reading from ./data/PrimerCaso.dataset
+Number of events with non null session in index: 20
+After filtering sessions (type == cart): 20 sessions
+There are 6 unique brands in the filtered sessions
+Adjacency Matrix 
+6 6
+haruyama ingarden markell nitrimax roubloff veraclara 
+haruyama ingarden markell nitrimax roubloff veraclara 
+0 0 0 0 1 0 
+0 0 0 1 0 1 
+0 0 0 3 1 2 
+0 1 3 0 0 0 
+1 0 1 0 0 0 
+0 1 2 0 0 0 
+
+1 6
+haruyama 
+haruyama ingarden markell nitrimax roubloff veraclara 
+0.0843245 0.112833 0.302843 0.201651 0.139598 0.15875 
+
+
+    0.0843    0.1128    0.3028    0.2017    0.1396    0.1588    1.0000
+
+  haruyama  ingarden   markell  nitrimax  roubloff veraclara
+

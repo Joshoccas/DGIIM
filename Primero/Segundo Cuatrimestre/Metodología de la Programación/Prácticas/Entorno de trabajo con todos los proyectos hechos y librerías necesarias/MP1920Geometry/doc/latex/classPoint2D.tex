@@ -1,0 +1,171 @@
+\hypertarget{classPoint2D}{}\section{Point2D Class Reference}
+\label{classPoint2D}\index{Point2D@{Point2D}}
+
+
+To represent a point in a two-\/dimensional space.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint2D_a2415006d697f1c222c17254bdd302098}\label{classPoint2D_a2415006d697f1c222c17254bdd302098}} 
+\hyperlink{classPoint2D_a2415006d697f1c222c17254bdd302098}{Point2D} ()
+\begin{DoxyCompactList}\small\item\em Basic constructor. \end{DoxyCompactList}\item 
+\hyperlink{classPoint2D_a925d8fbd28c1bec7ff05f24c9ce8d182}{Point2D} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Constructor with initialization parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX} (int px)
+\begin{DoxyCompactList}\small\item\em Initializes the X coordinate. \end{DoxyCompactList}\item 
+void \hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY} (int py)
+\begin{DoxyCompactList}\small\item\em Initializes the Y coordinate. \end{DoxyCompactList}\item 
+int \hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX} () const
+\begin{DoxyCompactList}\small\item\em Queries the X coordinate. \end{DoxyCompactList}\item 
+int \hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY} () const
+\begin{DoxyCompactList}\small\item\em Queries the Y coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoint2D_ac13d12003e2da9afee19a6a3f526c660}\label{classPoint2D_ac13d12003e2da9afee19a6a3f526c660}} 
+void \hyperlink{classPoint2D_ac13d12003e2da9afee19a6a3f526c660}{read} ()
+\begin{DoxyCompactList}\small\item\em Reads the XY value from keyboard. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoint2D_a4be0cc5bb62eef12bfa55ced97d03535}\label{classPoint2D_a4be0cc5bb62eef12bfa55ced97d03535}} 
+void \hyperlink{classPoint2D_a4be0cc5bb62eef12bfa55ced97d03535}{print} () const
+\begin{DoxyCompactList}\small\item\em Prints the XY values in the screen in the form (X,Y) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+To represent a point in a two-\/dimensional space. 
+
+Definition at line 31 of file main.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoint2D_a925d8fbd28c1bec7ff05f24c9ce8d182}\label{classPoint2D_a925d8fbd28c1bec7ff05f24c9ce8d182}} 
+\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\subsubsection{\texorpdfstring{Point2\+D()}{Point2D()}}
+{\footnotesize\ttfamily Point2\+D\+::\+Point2D (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with initialization parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordinate \\
+\hline
+{\em y} & Coordinate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+46                           \{
+47         px = x;
+48         py = y;
+49     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}\label{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}} 
+\index{Point2D@{Point2D}!getX@{getX}}
+\index{getX@{getX}!Point2D@{Point2D}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily int Point2\+D\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Queries the X coordinate. 
+
+\begin{DoxyReturn}{Returns}
+Value of X 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+68                      \{
+69         \textcolor{keywordflow}{return} px;
+70     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}\label{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}} 
+\index{Point2D@{Point2D}!getY@{getY}}
+\index{getY@{getY}!Point2D@{Point2D}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily int Point2\+D\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Queries the Y coordinate. 
+
+\begin{DoxyReturn}{Returns}
+Value of Y 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+75                      \{
+76         \textcolor{keywordflow}{return} py;
+77     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classPoint2D_af268842e8f2e6072ffe345dc2f322046}\label{classPoint2D_af268842e8f2e6072ffe345dc2f322046}} 
+\index{Point2D@{Point2D}!setX@{setX}}
+\index{setX@{setX}!Point2D@{Point2D}}
+\subsubsection{\texorpdfstring{set\+X()}{setX()}}
+{\footnotesize\ttfamily void Point2\+D\+::setX (\begin{DoxyParamCaption}\item[{int}]{px }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the X coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em px} & New value for X \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+54                       \{
+55         this->px = px;
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}\label{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}} 
+\index{Point2D@{Point2D}!setY@{setY}}
+\index{setY@{setY}!Point2D@{Point2D}}
+\subsubsection{\texorpdfstring{set\+Y()}{setY()}}
+{\footnotesize\ttfamily void Point2\+D\+::setY (\begin{DoxyParamCaption}\item[{int}]{py }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the Y coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em py} & New value for Y \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+61                       \{
+62         this->py = py;
+63     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{main_8cpp}{main.\+cpp}\end{DoxyCompactItemize}

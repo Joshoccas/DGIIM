@@ -1,0 +1,27 @@
+MEMORY LEAK REPORT BY Valgrind 
+
+mar 25 may 2021 17:40:08 CEST
+
+
+==8260== Memcheck, a memory error detector
+==8260== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8260== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==8260== Command: ./dist/Debug/GNU-Linux/shopping4 -noargs
+==8260== 
+
+[originalES(Original read from dataset)] 0 6142509188972423790
+
+[filteredES(Events indexed)] 0 6142509188972423790
+
+[hitsData(Report traffic)] 0 
+
+[amountData(Report amount)] 0 
+==8260== 
+==8260== HEAP SUMMARY:
+==8260==     in use at exit: 0 bytes in 0 blocks
+==8260==   total heap usage: 78 allocs, 78 frees, 91,007 bytes allocated
+==8260== 
+==8260== All heap blocks were freed -- no leaks are possible
+==8260== 
+==8260== For lists of detected and suppressed errors, rerun with: -s
+==8260== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,6 @@
+<map id="isInside" name="isInside">
+<area shape="rect" id="node2" href="$classRectangle.html#a812afd6deed0cdec0b4ad7b2bd93871d" title="Queries the top&#45;left corner. " alt="" coords="135,5,285,32"/>
+<area shape="rect" id="node3" href="$classPoint2D.html#a5cb1c2584e5b2bada0226a3e32aa2b1a" title="Queries the X coordinate. " alt="" coords="158,56,262,83"/>
+<area shape="rect" id="node4" href="$classRectangle.html#a5f30a92f3fc197dda50d9e59995d3ac1" title="Queries the bottom&#45;right corner. " alt="" coords="120,107,300,133"/>
+<area shape="rect" id="node5" href="$classPoint2D.html#a53d10f2e460c47a493a3fbadfbafbb64" title="Queries the Y coordinate. " alt="" coords="158,157,262,184"/>
+</map>

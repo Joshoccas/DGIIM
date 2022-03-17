@@ -1,0 +1,36 @@
+
+Reading from ./data/ECommerce5.dataset
+
+Read 5 records from file ./data/ECommerce5.dataset
+Main Index by UserID
+5 pairs 
+amount :18.73
+
+Activity found: SUNDAY(0) MONDAY(0) TUESDAY(5) WEDNESDAY(0) THURSDAY(0) FRIDAY(0) SATURDAY(0)
+
+Events/day
+         0         0         5         0         0         0         0         5
+
+    SUNDAY    MONDAY   TUESDAY WEDNESDAY  THURSDAY    FRIDAY  SATURDAY
+
+
+DateTime (traffic)
+         5         5
+
+2019-10-01
+
+
+DateTime (amount)
+        19        19
+
+2019-10-01
+
+
+Highest traffic choice (2019-10-01 00:00:00 UTC) with 5 hits 
+
+Saving on ./data/ECommerce5-hit2.dataset
+5 2019-10-01 00:15:06 UTC,cart,5869134,1783999064136745198,,cosmoprofi,6.350000,554342223,0b974342-1a53-41c1-a426-23130e770f4b
+2019-10-01 00:17:10 UTC,cart,5787018,1487580006644188066,,,6.330000,554342223,0b974342-1a53-41c1-a426-23130e770f4b
+2019-10-01 00:21:02 UTC,cart,5836843,1487580009261432856,,pnb,0.710000,554342223,0b974342-1a53-41c1-a426-23130e770f4b
+2019-10-01 00:22:24 UTC,cart,5755171,1487580009387261981,,,2.480000,554342223,0b974342-1a53-41c1-a426-23130e770f4b
+2019-10-01 00:22:56 UTC,cart,5691026,1487580009387261981,,,2.860000,554342223,0b974342-1a53-41c1-a426-23130e770f4b

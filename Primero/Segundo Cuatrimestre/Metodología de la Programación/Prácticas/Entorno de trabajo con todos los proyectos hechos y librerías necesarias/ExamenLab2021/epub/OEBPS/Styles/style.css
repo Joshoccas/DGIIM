@@ -1,0 +1,113 @@
+/* ePub base r1.2 ePubLibre */
+
+/* ----- ESTILOS GLOBALES Y DE SECCIONES FIJAS (NO MODIFICABLES) ----- */
+body { margin:1em; padding:0; border:0; }
+p { margin:0; text-align:justify; text-indent:1.5em; line-height:1.25em; }
+a, .normal { font-style:normal; font-weight:normal; text-decoration:none; }
+sup, sub { font-size:0.75em; line-height:normal; }
+
+.cubierta { margin:0; padding:0; border:0; font-size:0; text-align:center; text-indent:0; page-break-before:always; page-break-after:always; }
+	.cubierta img { height:100%; max-height:100%; }
+
+.tlogo, .tautor, .ttitulo, .tsubtitulo, .trevision, .tfirma { margin:0 0.25em; text-align:center; text-indent:0; font-family:sans-serif; font-weight:bold; adobe-hyphenate:none; hyphenate:none; hyphens:none; -moz-hyphens:none; -webkit-hyphens:none; }
+	.tlogo span { margin:3em 0 2.5em; display:inline-block; width:8em; }
+	.tautor { margin-bottom:0.5em; font-size:1.2em; font-weight:normal; color:#595959; }
+	.ttitulo { padding:0; border:0; font-size:1.8em; font-style:normal; text-decoration:none; color:black; visibility:visible; }
+	.tsubtitulo { margin-top:0.3em; }
+	.trevision { margin-top:2.5em; font-size:0.8em; color:#595959; }
+	.tfirma { margin-top:0.25em; font-size:0.65em; }
+	.tfecha { font-family:sans-serif; font-weight:normal; color:#595959; }
+
+.sinopsis, .sinopsis p, .autor, .autor p, .nota p { margin-top:0.5em; text-indent:0; }
+	.sinopsis p, .sinopsis em, .sinopsis strong, .sinopsis big, .sinopsis small, .sinopsis span { font-family:sans-serif; }
+.info { margin:3.5em 1.5em 2.5em; font-size:0.8em; width:90%; }
+	.info p { text-align:left; text-indent:0; }
+.vineta { padding:1em 0; text-align:center; text-indent:0; display:block; }
+.nota { padding-top:9%; page-break-before:always; }
+
+
+/* ----- ESTILOS GENERALES (ADAPTABLES) ----- */
+
+/* encabezados */
+h1, h2, h3, h4, h5, h6 { margin:25% 0.25em 1em; text-align:center; text-indent:0; page-break-after:avoid; page-break-inside:avoid; adobe-hyphenate:none; hyphenate:none; hyphens:none; -moz-hyphens:none; -webkit-hyphens:none; }
+	h1 { font-size:1.5em; }	/* sólo cambios aprobados, puede afectar páginas globales */
+	h2 { font-size:1.5em; }
+	h3 { font-size:1.4em; }
+	h4 { font-size:1.3em; }
+	h5 { font-size:1.2em; }
+	h6 { font-size:1.1em; }
+
+/* dedicatoria */
+.dedicatoria { margin:5em 1em 0 3em; text-align:right; }
+	.dedicatoria p { text-align:right; text-indent:0; }
+
+/* tipografía */
+.sans, .sans p, .sans em, .sans strong, .sans big, .sans small { font-family:sans-serif; }
+.serif, .serif p, .serif em, .serif strong, .serif big, .serif small { font-family:serif; }
+code, kbd, .mono, .mono p, .mono em, .mono strong, .mono big, .mono small { font-family:monospace; }
+
+i, em, cite, dfn, .cursiva { font-style:italic; }
+b, strong, .negrita { font-weight:bold; }
+ins, .subrayado { text-decoration:underline; }
+del, .tachado { text-decoration:line-through; }
+.oculto { display:none; visibility:hidden; }
+
+big, .grande { font-size:1.2em; }
+small, .versalita { font-size:0.8em; }	/* para texto en mayúsculas, de tamaño similar al de las minúsculas */
+
+/* alineación */
+.izquierda, .izquierda p { text-align:left; }
+.derecha, .derecha p { text-align:right; text-indent:0; }
+.centrado, .centrado p { text-align:center; text-indent:0; }
+.justificado, .justificado p { text-align:justify; }
+.asangre, .asangre p { text-indent:0; }
+
+/* saltos */
+.sintop { margin-top:0; }
+.saltoinicio { margin-top:33%; }
+.salto05 { padding-top:0.5em; }
+.salto10 { padding-top:1em; }
+.salto25 { padding-top:2.5em; }
+
+/* bloques */
+.sinmargen { margin:0; }
+blockquote, .cita { margin:1.5em; }
+.bloque { page-break-inside:avoid; }	/* evita dividir un elemento entre páginas */
+.nosep { text-indent:0; display:inline-block; }	/* evita dividir una palabra entre líneas */
+.extenso { orphans:0; widows:0; }	/* evita división aleatoria de párrafos muy extensos (bug ADE) */
+.banner { margin:1.5em 12%; padding:0.5em 1em; text-align:center; text-indent:0; border:2px solid black; border-left:none; border-right:none; }
+	.banner p { text-align:center; text-indent:0; }
+
+/* listas */
+li { margin:0; text-align:justify; text-indent:0; line-height:1.3em; }
+
+/* imágenes simples */	/* para láminas verticales (página completa), usar el estilo fijo «cubierta» */
+.ilustra { margin:1em 0; text-align:center; text-indent:0; display:block; }
+	.ilustra img { max-height:100%; max-width:100%; }
+
+/* -------- ESTILOS PERSONALES -------- */
+@font-face { font-family:"Bell MT"; font-style:normal; font-weight:normal; src:url(../Fonts/BellMT.TTF); }
+.shortpoem { font-size:1em; text-align:center; margin: 0em 0em 0em 3em; text-indent: 0em; padding-top:1em; padding-bottom:1em;}
+.titulo { font-family:"Times New Roman"; }
+.subtitulo { margin:0; font-style:italic; font-family:"Bell MT"; padding:0.5em 1em; text-align:center; text-indent:0; border:2px solid black; border-left:none; border-right:none; }
+.titintro { font-family:"Times New Roman"; font-size:1.0em; font-weight:bold; }
+.suptit { font-size:0.5em; font-style:normal; font-weight:normal; text-decoration:none }
+.supsubtit { font-size:0.82em; font-style:normal; font-weight:normal; text-decoration:none }
+.ilustra { margin:0; }
+  .ilustra img { height:100%; max-width:100%; }
+
+.soneto { padding-left:25%; text-align:left; text-indent:0; }
+.verso { margin-left:3em; text-align:left; text-indent:1em; line-height:1.3em; }
+
+.citainicio {font-size:.88em; margin:0 15% 2.5em 20%;}
+  .citainicio p {text-indent:-0.5em;}
+     .marg20 {margin:0 20% 2.5em}
+     .marg25 {margin:0 25% 2.5em}
+     .marg30 {margin:0 30% 2.5em}
+     .marg35 {margin:0 35% 2.5em}
+
+.ensayo { font-family:"Times New Roman";  margin-top:1%; }
+.subtitanx { font-size:1em; font-style:normal; font-weight:normal; text-decoration:none; margin:0; text-align:center; text-indent:1.5em; line-height:1.3em; padding-top:2.5em; }
+
+.grabado { margin:1em -1em; padding:0; border:0; text-align:center; text-indent:0; display:block; }
+.inpre { margin-top:3%; }

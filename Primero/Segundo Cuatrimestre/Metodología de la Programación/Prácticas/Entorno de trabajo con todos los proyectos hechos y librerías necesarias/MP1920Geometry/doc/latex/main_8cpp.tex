@@ -1,0 +1,205 @@
+\hypertarget{main_8cpp}{}\section{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.\+cpp@{src/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classPoint2D}{Point2D}
+\begin{DoxyCompactList}\small\item\em To represent a point in a two-\/dimensional space. \end{DoxyCompactList}\item 
+class \hyperlink{classRectangle}{Rectangle}
+\begin{DoxyCompactList}\small\item\em To represent a rectangle in a two-\/dimensional space as a pair or points, the top-\/left corner and the bottom-\/right one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRectangle}{Rectangle} \hyperlink{main_8cpp_a888d2b0113947b4461107bb02b28799d}{do\+Overlap} (const \hyperlink{classRectangle}{Rectangle} \&r1, const \hyperlink{classRectangle}{Rectangle} \&r2)
+\item 
+bool \hyperlink{main_8cpp_a5fe7cf71c1f13eed4b8144d0e00dc58d}{is\+Inside} (const \hyperlink{classPoint2D}{Point2D} \&p, const \hyperlink{classRectangle}{Rectangle} \&r)
+\begin{DoxyCompactList}\small\item\em Calculates whether a point is internal to a rectangle. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+D\+E\+C\+S\+AI 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+To be implemented (partially) by students 
+\end{DoxyNote}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a888d2b0113947b4461107bb02b28799d}\label{main_8cpp_a888d2b0113947b4461107bb02b28799d}} 
+\index{main.\+cpp@{main.\+cpp}!do\+Overlap@{do\+Overlap}}
+\index{do\+Overlap@{do\+Overlap}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{do\+Overlap()}{doOverlap()}}
+{\footnotesize\ttfamily \hyperlink{classRectangle}{Rectangle} do\+Overlap (\begin{DoxyParamCaption}\item[{const \hyperlink{classRectangle}{Rectangle} \&}]{r1,  }\item[{const \hyperlink{classRectangle}{Rectangle} \&}]{r2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & One rectangle \\
+\hline
+{\em r2} & Other rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rectangle given by the intersection of {\ttfamily r1} and {\ttfamily r2} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is an external function to the class \hyperlink{classRectangle}{Rectangle} but since it is also friend, this function is allowed access to private data/methods 
+\end{DoxyNote}
+
+
+Definition at line 198 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+198                                                                \{
+199     \hyperlink{classRectangle}{Rectangle} result;
+200     \hyperlink{classPoint2D}{Point2D} rTL, rBR;
+201     \textcolor{comment}{/* NO FRIEND}
+202 \textcolor{comment}{        rTL.setX(max(r1.getTopLeft().getX(),r2.getTopLeft().getX()));}
+203 \textcolor{comment}{        rTL.setY(max(r1.getTopLeft().getY(),r2.getTopLeft().getY()));}
+204 \textcolor{comment}{        rBR.setX(min(r1.getBottomRight().getX(),r2.getBottomRight().getX()));}
+205 \textcolor{comment}{        rBR.setY(min(r1.getBottomRight().getY(),r2.getBottomRight().getY()));}
+206 \textcolor{comment}{     */}
+207     rTL.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(max(r1.topleft.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}(),r2.topleft.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()));
+208     rTL.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(min(r1.topleft.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}(),r2.topleft.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}()));
+209     rBR.\hyperlink{classPoint2D_af268842e8f2e6072ffe345dc2f322046}{setX}(min(r1.bottomright.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}(),r2.bottomright.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()));
+210     rBR.\hyperlink{classPoint2D_a0e08240b54e6eaae92c979082da1c91c}{setY}(max(r1.bottomright.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}(),r2.bottomright.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}()));
+211     result.\hyperlink{classRectangle_a31c4b9fc0d1ddf912f114da494e50205}{setGeometry}(rTL,rBR);
+212     \textcolor{keywordflow}{return} result; \textcolor{comment}{// Read more}
+213 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a888d2b0113947b4461107bb02b28799d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a5fe7cf71c1f13eed4b8144d0e00dc58d}\label{main_8cpp_a5fe7cf71c1f13eed4b8144d0e00dc58d}} 
+\index{main.\+cpp@{main.\+cpp}!is\+Inside@{is\+Inside}}
+\index{is\+Inside@{is\+Inside}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{is\+Inside()}{isInside()}}
+{\footnotesize\ttfamily bool is\+Inside (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint2D}{Point2D} \&}]{p,  }\item[{const \hyperlink{classRectangle}{Rectangle} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Calculates whether a point is internal to a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point \\
+\hline
+{\em r} & The rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if {\ttfamily p} is inscribed within {\ttfamily r}, \\
+\hline
+{\em false} & otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 221 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+221                                                     \{
+222     \textcolor{keywordflow}{return} r.\hyperlink{classRectangle_a812afd6deed0cdec0b4ad7b2bd93871d}{getTopLeft}().\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}() <= p.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}() && p.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()<=r.
+      \hyperlink{classRectangle_a5f30a92f3fc197dda50d9e59995d3ac1}{getBottomRight}().\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}() &&
+223            r.\hyperlink{classRectangle_a812afd6deed0cdec0b4ad7b2bd93871d}{getTopLeft}().\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}() >= p.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}() && p.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}()>=r.
+      \hyperlink{classRectangle_a5f30a92f3fc197dda50d9e59995d3ac1}{getBottomRight}().\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}(); 
+224 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{main_8cpp_a5fe7cf71c1f13eed4b8144d0e00dc58d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function. 
+
+\begin{DoxyReturn}{Returns}
+Always 0 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file main.\+cpp.
+
+
+\begin{DoxyCode}
+230            \{
+231     \hyperlink{classRectangle}{Rectangle} A, B, Intersection;
+232     \hyperlink{classPoint2D}{Point2D} p; 
+233     \textcolor{keywordtype}{int} count;
+234     
+235     A.\hyperlink{classRectangle_a31c4b9fc0d1ddf912f114da494e50205}{setGeometry}(2,5,3,3);
+236     cout << \textcolor{stringliteral}{"First rectangle is "}; 
+237     A.\hyperlink{classRectangle_a4e315c59754599c74e99e8b31f7031a0}{print}();
+238     cout << endl << \textcolor{stringliteral}{"Type second rectangle: "};
+239     B.\hyperlink{classRectangle_af6973ed3094f9dbabeadb071772fa76d}{read}();
+240     cout << endl << \textcolor{stringliteral}{"Calculating intersection of: "};
+241     A.\hyperlink{classRectangle_a4e315c59754599c74e99e8b31f7031a0}{print}();
+242     cout << \textcolor{stringliteral}{" and "};
+243     B.\hyperlink{classRectangle_a4e315c59754599c74e99e8b31f7031a0}{print}();
+244     cout << endl;
+245     Intersection = \hyperlink{main_8cpp_a888d2b0113947b4461107bb02b28799d}{doOverlap}(A,B);
+246     \textcolor{keywordflow}{if} (Intersection.\hyperlink{classRectangle_af732bce8c96d2469994825e9a87dbe5f}{isEmpty}()) \{
+247         cerr << \textcolor{stringliteral}{"Empty intersection"}<<endl;
+248     \} \textcolor{keywordflow}{else} \{
+249         cout << \textcolor{stringliteral}{"The intersection is: "};
+250         Intersection.\hyperlink{classRectangle_a4e315c59754599c74e99e8b31f7031a0}{print}();
+251         count = 0;
+252         cout << endl << \textcolor{stringliteral}{"Reading points..."};
+253         p.\hyperlink{classPoint2D_ac13d12003e2da9afee19a6a3f526c660}{read}();
+254         \textcolor{keywordflow}{while} (p.\hyperlink{classPoint2D_a5cb1c2584e5b2bada0226a3e32aa2b1a}{getX}()>=0 && p.\hyperlink{classPoint2D_a53d10f2e460c47a493a3fbadfbafbb64}{getY}()>=0) \{
+255             \textcolor{keywordflow}{if} (\hyperlink{main_8cpp_a5fe7cf71c1f13eed4b8144d0e00dc58d}{isInside}(p,Intersection)) \{
+256                 p.\hyperlink{classPoint2D_a4be0cc5bb62eef12bfa55ced97d03535}{print}();
+257                 count ++;
+258             \} 
+259             p.\hyperlink{classPoint2D_ac13d12003e2da9afee19a6a3f526c660}{read}();
+260         \}
+261         \textcolor{keywordflow}{if} (count > 0)
+262             cout << \textcolor{stringliteral}{" fall within the intersection ("}<< count<<\textcolor{stringliteral}{" total)"} << endl;
+263         \textcolor{keywordflow}{else}
+264             cout << \textcolor{stringliteral}{" None of them falls within the intersection "}<<endl;
+265     \}
+266 
+267     \textcolor{keywordflow}{return} 0;
+268 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

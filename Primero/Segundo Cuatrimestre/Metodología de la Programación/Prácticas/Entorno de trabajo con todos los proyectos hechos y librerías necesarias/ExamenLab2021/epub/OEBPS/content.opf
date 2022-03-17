@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:9b8bb780-e414-11e2-a28f-0800200c9a66</dc:identifier>
+    <dc:title>Don Quijote de la Mancha</dc:title>
+    <dc:creator opf:file-as="Cervantes Saavedra, Miguel de" opf:role="aut">Miguel de Cervantes Saavedra</dc:creator>
+    <dc:language>es</dc:language>
+    <dc:subject>Novela, Aventuras</dc:subject>
+    <dc:description>Poco puede decirse del Quijote que no se haya dicho ya. Obra culmen de la literatura universal y primera novela moderna, Cervantes ideó la historia de un hidalgo aldeano que enloquece de tanto leer novelas de caballerías y, como buen caballero andante, sale a los caminos con el noble afán de ayudar a los necesitados. Así, en compañía del afable y crédulo Sancho Panza, don Quijote participa en una serie de delirantes aventuras que provocarán la hilaridad del lector, ya que la vida que reproduce Cervantes es alegre, graciosa y dramática, a la vez que sana y optimista, a pesar de las vicisitudes de su existencia. Sin embargo, el Quijote es mucho más, pues constituye una lección magistral sobre la grandeza y la miseria de la condición humana. La Real Academia Española y la Asociación de Academias de la Lengua Española conmemoran el IV Centenario de Don Quijote de la Mancha con la publicación de una edición de la obra de Miguel de Cervantes. El texto crítico y sus notas han sido preparados por Francisco Rico. El texto ha sido fijado a partir del examen de todas las ediciones significativas, antiguas y modernas, y con la aplicación de los métodos filológicos más rigurosos. Las notas aclaran todos los puntos que pueden plantear dudas al lector moderno y están redactadas siempre con la máxima claridad y del modo que más agiliza la lectura. Lo acompañan un extenso prólogo de Vargas Llosa, estudios generales de Martín de Riquer, Francisco Ayala; y el propio Francisco Rico y se cierra con otra serie de diversos artículos de importantes comentaristas y un glosario de 7.000 términos que ayudará al lector actual a conocer la lengua de Cervantes.</dc:description>
+    <dc:date opf:event="publication">1605-01-01</dc:date>
+    <dc:date opf:event="modification">2015-09-04</dc:date>
+    <dc:publisher>ePubLibre</dc:publisher>
+    <meta content="0.7.4" name="Sigil version" />
+    <meta name="cover" content="cover.jpg" />
+  </metadata>
+  <manifest>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+    <item href="Styles/style.css" id="style.css" media-type="text/css" />
+    <item href="Text/cubierta.xhtml" id="cubierta.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/presentacion.xhtml" id="presentacion.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/sinopsis.xhtml" id="sinopsis.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/titulo.xhtml" id="titulo.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/info.xhtml" id="info.xhtml" media-type="application/xhtml+xml" />
+    <item href="Images/EPL_logo.png" id="EPL_logo.png" media-type="image/png" />
+    <item href="Images/ex_libris.png" id="ex_libris.png" media-type="image/png" />
+    <item href="Text/1.1.xhtml" id="x1.1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.2.xhtml" id="x1.2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.3.xhtml" id="x1.3.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.4.xhtml" id="x1.4.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.5.xhtml" id="x1.5.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/intro1.xhtml" id="intro1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.xhtml" id="notas1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.6.xhtml" id="x1.6.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.7.xhtml" id="x1.7.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.8.xhtml" id="x1.8.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.9.xhtml" id="x1.9.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.10.xhtml" id="x1.10.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.11.xhtml" id="x1.11.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.12.xhtml" id="x1.12.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.13.xhtml" id="x1.13.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.14.xhtml" id="x1.14.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.15.xhtml" id="x1.15.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.16.xhtml" id="x1.16.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.17.xhtml" id="x1.17.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.18.xhtml" id="x1.18.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.19.xhtml" id="x1.19.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.20.xhtml" id="x1.20.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.21.xhtml" id="x1.21.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.22.xhtml" id="x1.22.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.23.xhtml" id="x1.23.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.24.xhtml" id="x1.24.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.25.xhtml" id="x1.25.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.26.xhtml" id="x1.26.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.27.xhtml" id="x1.27.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.28.xhtml" id="x1.28.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.29.xhtml" id="x1.29.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.30.xhtml" id="x1.30.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.31.xhtml" id="x1.31.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.32.xhtml" id="x1.32.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.33.xhtml" id="x1.33.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.34.xhtml" id="x1.34.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.35.xhtml" id="x1.35.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.36.xhtml" id="x1.36.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.37.xhtml" id="x1.37.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.38.xhtml" id="x1.38.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.39.xhtml" id="x1.39.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.40.xhtml" id="x1.40.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.41.xhtml" id="x1.41.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.42.xhtml" id="x1.42.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.43.xhtml" id="x1.43.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.44.xhtml" id="x1.44.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.45.xhtml" id="x1.45.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.46.xhtml" id="x1.46.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.47.xhtml" id="x1.47.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.48.xhtml" id="x1.48.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.49.xhtml" id="x1.49.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.50.xhtml" id="x1.50.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.51.xhtml" id="x1.51.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/1.52.xhtml" id="x1.52.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.1.xhtml" id="x2.1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.2.xhtml" id="x2.2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.3.xhtml" id="x2.3.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.4.xhtml" id="x2.4.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.5.xhtml" id="x2.5.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.6.xhtml" id="x2.6.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.7.xhtml" id="x2.7.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.8.xhtml" id="x2.8.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.9.xhtml" id="x2.9.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.10.xhtml" id="x2.10.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.11.xhtml" id="x2.11.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.12.xhtml" id="x2.12.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.13.xhtml" id="x2.13.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.14.xhtml" id="x2.14.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.15.xhtml" id="x2.15.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.16.xhtml" id="x2.16.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.17.xhtml" id="x2.17.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.18.xhtml" id="x2.18.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.19.xhtml" id="x2.19.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.20.xhtml" id="x2.20.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.21.xhtml" id="x2.21.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.22.xhtml" id="x2.22.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.23.xhtml" id="x2.23.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.24.xhtml" id="x2.24.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.25.xhtml" id="x2.25.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.26.xhtml" id="x2.26.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.27.xhtml" id="x2.27.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.28.xhtml" id="x2.28.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.29.xhtml" id="x2.29.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.30.xhtml" id="x2.30.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.31.xhtml" id="x2.31.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.32.xhtml" id="x2.32.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.33.xhtml" id="x2.33.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.34.xhtml" id="x2.34.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.35.xhtml" id="x2.35.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.36.xhtml" id="x2.36.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.37.xhtml" id="x2.37.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.38.xhtml" id="x2.38.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.39.xhtml" id="x2.39.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.40.xhtml" id="x2.40.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.41.xhtml" id="x2.41.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.42.xhtml" id="x2.42.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.43.xhtml" id="x2.43.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.44.xhtml" id="x2.44.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.45.xhtml" id="x2.45.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.46.xhtml" id="x2.46.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.47.xhtml" id="x2.47.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.48.xhtml" id="x2.48.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.49.xhtml" id="x2.49.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.50.xhtml" id="x2.50.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.51.xhtml" id="x2.51.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.52.xhtml" id="x2.52.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.53.xhtml" id="x2.53.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.54.xhtml" id="x2.54.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.55.xhtml" id="x2.55.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.56.xhtml" id="x2.56.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.57.xhtml" id="x2.57.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.58.xhtml" id="x2.58.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.59.xhtml" id="x2.59.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.60.xhtml" id="x2.60.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.61.xhtml" id="x2.61.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.62.xhtml" id="x2.62.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.63.xhtml" id="x2.63.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.64.xhtml" id="x2.64.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.65.xhtml" id="x2.65.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.66.xhtml" id="x2.66.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.67.xhtml" id="x2.67.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.68.xhtml" id="x2.68.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.69.xhtml" id="x2.69.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.70.xhtml" id="x2.70.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.71.xhtml" id="x2.71.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.72.xhtml" id="x2.72.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.73.xhtml" id="x2.73.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/2.74.xhtml" id="x2.74.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.xhtml" id="notas2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/primeraparte.xhtml" id="primeraparte.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/protada1.xhtml" id="protada1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/Parte2.xhtml" id="Parte2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/Portada2.xhtml" id="Portada2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/intro2.xhtml" id="intro2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/compl.xhtml" id="compl.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/primera.xhtml" id="primera.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/segunda.xhtml" id="segunda.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/tercera.xhtml" id="tercera.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/cuarta.xhtml" id="cuarta.xhtml" media-type="application/xhtml+xml" />
+    <item href="Fonts/BellMT.TTF" id="BellMT.TTF" media-type="application/x-font-ttf" />
+    <item href="Text/notas1.1.xhtml" id="notas1.1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.2.xhtml" id="notas1.2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.3.xhtml" id="notas1.3.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.4.xhtml" id="notas1.4.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.5.xhtml" id="notas1.5.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.6.xhtml" id="notas1.6.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.7.xhtml" id="notas1.7.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.8.xhtml" id="notas1.8.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.9.xhtml" id="notas1.9.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.10.xhtml" id="notas1.10.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.11.xhtml" id="notas1.11.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.12.xhtml" id="notas1.12.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.13.xhtml" id="notas1.13.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.14.xhtml" id="notas1.14.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.15.xhtml" id="notas1.15.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.16.xhtml" id="notas1.16.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.17.xhtml" id="notas1.17.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.18.xhtml" id="notas1.18.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.19.xhtml" id="notas1.19.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.20.xhtml" id="notas1.20.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.21.xhtml" id="notas1.21.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.22.xhtml" id="notas1.22.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.23.xhtml" id="notas1.23.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.24.xhtml" id="notas1.24.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.25.xhtml" id="notas1.25.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.26.xhtml" id="notas1.26.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.27.xhtml" id="notas1.27.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.28.xhtml" id="notas1.28.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.29.xhtml" id="notas1.29.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.30.xhtml" id="notas1.30.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.31.xhtml" id="notas1.31.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.32.xhtml" id="notas1.32.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.33.xhtml" id="notas1.33.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.34.xhtml" id="notas1.34.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.35.xhtml" id="notas1.35.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.36.xhtml" id="notas1.36.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.37.xhtml" id="notas1.37.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.38.xhtml" id="notas1.38.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.39.xhtml" id="notas1.39.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.40.xhtml" id="notas1.40.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.41.xhtml" id="notas1.41.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.42.xhtml" id="notas1.42.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.43.xhtml" id="notas1.43.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.44.xhtml" id="notas1.44.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.45.xhtml" id="notas1.45.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.46.xhtml" id="notas1.46.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.47.xhtml" id="notas1.47.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.48.xhtml" id="notas1.48.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.49.xhtml" id="notas1.49.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.50.xhtml" id="notas1.50.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.51.xhtml" id="notas1.51.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas1.52.xhtml" id="notas1.52.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.1.xhtml" id="notas2.1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.2.xhtml" id="notas2.2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.3.xhtml" id="notas2.3.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.4.xhtml" id="notas2.4.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.5.xhtml" id="notas2.5.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.6.xhtml" id="notas2.6.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.7.xhtml" id="notas2.7.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.8.xhtml" id="notas2.8.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.9.xhtml" id="notas2.9.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.10.xhtml" id="notas2.10.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.11.xhtml" id="notas2.11.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.12.xhtml" id="notas2.12.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.13.xhtml" id="notas2.13.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.14.xhtml" id="notas2.14.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.15.xhtml" id="notas2.15.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.16.xhtml" id="notas2.16.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.17.xhtml" id="notas2.17.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.18.xhtml" id="notas2.18.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.19.xhtml" id="notas2.19.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.20.xhtml" id="notas2.20.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.21.xhtml" id="notas2.21.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.22.xhtml" id="notas2.22.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.23.xhtml" id="notas2.23.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.24.xhtml" id="notas2.24.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.25.xhtml" id="notas2.25.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.26.xhtml" id="notas2.26.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.27.xhtml" id="notas2.27.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.28.xhtml" id="notas2.28.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.29.xhtml" id="notas2.29.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.30.xhtml" id="notas2.30.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.31.xhtml" id="notas2.31.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.32.xhtml" id="notas2.32.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.33.xhtml" id="notas2.33.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.34.xhtml" id="notas2.34.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.35.xhtml" id="notas2.35.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.36.xhtml" id="notas2.36.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.37.xhtml" id="notas2.37.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.38.xhtml" id="notas2.38.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.39.xhtml" id="notas2.39.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.40.xhtml" id="notas2.40.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.41.xhtml" id="notas2.41.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.42.xhtml" id="notas2.42.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.43.xhtml" id="notas2.43.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.44.xhtml" id="notas2.44.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.45.xhtml" id="notas2.45.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.46.xhtml" id="notas2.46.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.47.xhtml" id="notas2.47.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.48.xhtml" id="notas2.48.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.49.xhtml" id="notas2.49.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.50.xhtml" id="notas2.50.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.51.xhtml" id="notas2.51.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.52.xhtml" id="notas2.52.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.53.xhtml" id="notas2.53.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.54.xhtml" id="notas2.54.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.55.xhtml" id="notas2.55.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.56.xhtml" id="notas2.56.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.57.xhtml" id="notas2.57.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.58.xhtml" id="notas2.58.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.59.xhtml" id="notas2.59.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.60.xhtml" id="notas2.60.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.61.xhtml" id="notas2.61.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.62.xhtml" id="notas2.62.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.63.xhtml" id="notas2.63.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.64.xhtml" id="notas2.64.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.65.xhtml" id="notas2.65.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.66.xhtml" id="notas2.66.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.67.xhtml" id="notas2.67.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.68.xhtml" id="notas2.68.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.69.xhtml" id="notas2.69.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.70.xhtml" id="notas2.70.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.71.xhtml" id="notas2.71.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.72.xhtml" id="notas2.72.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.73.xhtml" id="notas2.73.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/notas2.74.xhtml" id="notas2.74.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/ntscoml.xhtml" id="ntscoml.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/vargasllosa.xhtml" id="vargasllosa.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/frico.xhtml" id="frico.xhtml" media-type="application/xhtml+xml" />
+    <item href="Images/p1159.jpg" id="p1159.jpg" media-type="image/jpeg" />
+    <item href="Images/p1160.jpg" id="p1160.jpg" media-type="image/jpeg" />
+    <item href="Images/p1165.jpg" id="p1165.jpg" media-type="image/jpeg" />
+    <item href="Images/p1166.jpg" id="p1166.jpg" media-type="image/jpeg" />
+    <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg" />
+    <item href="Text/fayala.xhtml" id="fayala.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/mriquer.xhtml" id="mriquer.xhtml" media-type="application/xhtml+xml" />
+    <item href="Images/01.jpg" id="x01.jpg" media-type="image/jpeg" />
+    <item href="Images/02.jpg" id="x02.jpg" media-type="image/jpeg" />
+    <item href="Images/03.jpg" id="x03.jpg" media-type="image/jpeg" />
+    <item href="Images/04.jpg" id="x04.jpg" media-type="image/jpeg" />
+    <item href="Images/05.jpg" id="x05.jpg" media-type="image/jpeg" />
+    <item href="Images/06.jpg" id="x06.jpg" media-type="image/jpeg" />
+    <item href="Images/07.jpg" id="x07.jpg" media-type="image/jpeg" />
+    <item href="Images/08.jpg" id="x08.jpg" media-type="image/jpeg" />
+    <item href="Images/09.jpg" id="x09.jpg" media-type="image/jpeg" />
+    <item href="Images/10.jpg" id="x10.jpg" media-type="image/jpeg" />
+    <item href="Images/portada1.jpg" id="portada1.jpg" media-type="image/jpeg" />
+    <item href="Images/portada2.jpg" id="portada2.jpg" media-type="image/jpeg" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cubierta.xhtml" />
+    <itemref idref="sinopsis.xhtml" />
+    <itemref idref="titulo.xhtml" />
+    <itemref idref="info.xhtml" />
+    <itemref idref="presentacion.xhtml" />
+    <itemref idref="vargasllosa.xhtml" />
+    <itemref idref="fayala.xhtml" />
+    <itemref idref="mriquer.xhtml" />
+    <itemref idref="frico.xhtml" />
+    <itemref idref="primeraparte.xhtml" />
+    <itemref idref="protada1.xhtml" />
+    <itemref idref="intro1.xhtml" />
+    <itemref idref="primera.xhtml" />
+    <itemref idref="x1.1.xhtml" />
+    <itemref idref="x1.2.xhtml" />
+    <itemref idref="x1.3.xhtml" />
+    <itemref idref="x1.4.xhtml" />
+    <itemref idref="x1.5.xhtml" />
+    <itemref idref="x1.6.xhtml" />
+    <itemref idref="x1.7.xhtml" />
+    <itemref idref="x1.8.xhtml" />
+    <itemref idref="segunda.xhtml" />
+    <itemref idref="x1.9.xhtml" />
+    <itemref idref="x1.10.xhtml" />
+    <itemref idref="x1.11.xhtml" />
+    <itemref idref="x1.12.xhtml" />
+    <itemref idref="x1.13.xhtml" />
+    <itemref idref="x1.14.xhtml" />
+    <itemref idref="tercera.xhtml" />
+    <itemref idref="x1.15.xhtml" />
+    <itemref idref="x1.16.xhtml" />
+    <itemref idref="x1.17.xhtml" />
+    <itemref idref="x1.18.xhtml" />
+    <itemref idref="x1.19.xhtml" />
+    <itemref idref="x1.20.xhtml" />
+    <itemref idref="x1.21.xhtml" />
+    <itemref idref="x1.22.xhtml" />
+    <itemref idref="x1.23.xhtml" />
+    <itemref idref="x1.24.xhtml" />
+    <itemref idref="x1.25.xhtml" />
+    <itemref idref="x1.26.xhtml" />
+    <itemref idref="x1.27.xhtml" />
+    <itemref idref="cuarta.xhtml" />
+    <itemref idref="x1.28.xhtml" />
+    <itemref idref="x1.29.xhtml" />
+    <itemref idref="x1.30.xhtml" />
+    <itemref idref="x1.31.xhtml" />
+    <itemref idref="x1.32.xhtml" />
+    <itemref idref="x1.33.xhtml" />
+    <itemref idref="x1.34.xhtml" />
+    <itemref idref="x1.35.xhtml" />
+    <itemref idref="x1.36.xhtml" />
+    <itemref idref="x1.37.xhtml" />
+    <itemref idref="x1.38.xhtml" />
+    <itemref idref="x1.39.xhtml" />
+    <itemref idref="x1.40.xhtml" />
+    <itemref idref="x1.41.xhtml" />
+    <itemref idref="x1.42.xhtml" />
+    <itemref idref="x1.43.xhtml" />
+    <itemref idref="x1.44.xhtml" />
+    <itemref idref="x1.45.xhtml" />
+    <itemref idref="x1.46.xhtml" />
+    <itemref idref="x1.47.xhtml" />
+    <itemref idref="x1.48.xhtml" />
+    <itemref idref="x1.49.xhtml" />
+    <itemref idref="x1.50.xhtml" />
+    <itemref idref="x1.51.xhtml" />
+    <itemref idref="x1.52.xhtml" />
+    <itemref idref="Parte2.xhtml" />
+    <itemref idref="Portada2.xhtml" />
+    <itemref idref="intro2.xhtml" />
+    <itemref idref="x2.1.xhtml" />
+    <itemref idref="x2.2.xhtml" />
+    <itemref idref="x2.3.xhtml" />
+    <itemref idref="x2.4.xhtml" />
+    <itemref idref="x2.5.xhtml" />
+    <itemref idref="x2.6.xhtml" />
+    <itemref idref="x2.7.xhtml" />
+    <itemref idref="x2.8.xhtml" />
+    <itemref idref="x2.9.xhtml" />
+    <itemref idref="x2.10.xhtml" />
+    <itemref idref="x2.11.xhtml" />
+    <itemref idref="x2.12.xhtml" />
+    <itemref idref="x2.13.xhtml" />
+    <itemref idref="x2.14.xhtml" />
+    <itemref idref="x2.15.xhtml" />
+    <itemref idref="x2.16.xhtml" />
+    <itemref idref="x2.17.xhtml" />
+    <itemref idref="x2.18.xhtml" />
+    <itemref idref="x2.19.xhtml" />
+    <itemref idref="x2.20.xhtml" />
+    <itemref idref="x2.21.xhtml" />
+    <itemref idref="x2.22.xhtml" />
+    <itemref idref="x2.23.xhtml" />
+    <itemref idref="x2.24.xhtml" />
+    <itemref idref="x2.25.xhtml" />
+    <itemref idref="x2.26.xhtml" />
+    <itemref idref="x2.27.xhtml" />
+    <itemref idref="x2.28.xhtml" />
+    <itemref idref="x2.29.xhtml" />
+    <itemref idref="x2.30.xhtml" />
+    <itemref idref="x2.31.xhtml" />
+    <itemref idref="x2.32.xhtml" />
+    <itemref idref="x2.33.xhtml" />
+    <itemref idref="x2.34.xhtml" />
+    <itemref idref="x2.35.xhtml" />
+    <itemref idref="x2.36.xhtml" />
+    <itemref idref="x2.37.xhtml" />
+    <itemref idref="x2.38.xhtml" />
+    <itemref idref="x2.39.xhtml" />
+    <itemref idref="x2.40.xhtml" />
+    <itemref idref="x2.41.xhtml" />
+    <itemref idref="x2.42.xhtml" />
+    <itemref idref="x2.43.xhtml" />
+    <itemref idref="x2.44.xhtml" />
+    <itemref idref="x2.45.xhtml" />
+    <itemref idref="x2.46.xhtml" />
+    <itemref idref="x2.47.xhtml" />
+    <itemref idref="x2.48.xhtml" />
+    <itemref idref="x2.49.xhtml" />
+    <itemref idref="x2.50.xhtml" />
+    <itemref idref="x2.51.xhtml" />
+    <itemref idref="x2.52.xhtml" />
+    <itemref idref="x2.53.xhtml" />
+    <itemref idref="x2.54.xhtml" />
+    <itemref idref="x2.55.xhtml" />
+    <itemref idref="x2.56.xhtml" />
+    <itemref idref="x2.57.xhtml" />
+    <itemref idref="x2.58.xhtml" />
+    <itemref idref="x2.59.xhtml" />
+    <itemref idref="x2.60.xhtml" />
+    <itemref idref="x2.61.xhtml" />
+    <itemref idref="x2.62.xhtml" />
+    <itemref idref="x2.63.xhtml" />
+    <itemref idref="x2.64.xhtml" />
+    <itemref idref="x2.65.xhtml" />
+    <itemref idref="x2.66.xhtml" />
+    <itemref idref="x2.67.xhtml" />
+    <itemref idref="x2.68.xhtml" />
+    <itemref idref="x2.69.xhtml" />
+    <itemref idref="x2.70.xhtml" />
+    <itemref idref="x2.71.xhtml" />
+    <itemref idref="x2.72.xhtml" />
+    <itemref idref="x2.73.xhtml" />
+    <itemref idref="x2.74.xhtml" />
+    <itemref idref="compl.xhtml" />
+    <itemref idref="notas1.xhtml" />
+    <itemref idref="notas1.1.xhtml" />
+    <itemref idref="notas1.2.xhtml" />
+    <itemref idref="notas1.3.xhtml" />
+    <itemref idref="notas1.4.xhtml" />
+    <itemref idref="notas1.5.xhtml" />
+    <itemref idref="notas1.6.xhtml" />
+    <itemref idref="notas1.7.xhtml" />
+    <itemref idref="notas1.8.xhtml" />
+    <itemref idref="notas1.9.xhtml" />
+    <itemref idref="notas1.10.xhtml" />
+    <itemref idref="notas1.11.xhtml" />
+    <itemref idref="notas1.12.xhtml" />
+    <itemref idref="notas1.13.xhtml" />
+    <itemref idref="notas1.14.xhtml" />
+    <itemref idref="notas1.15.xhtml" />
+    <itemref idref="notas1.16.xhtml" />
+    <itemref idref="notas1.17.xhtml" />
+    <itemref idref="notas1.18.xhtml" />
+    <itemref idref="notas1.19.xhtml" />
+    <itemref idref="notas1.20.xhtml" />
+    <itemref idref="notas1.21.xhtml" />
+    <itemref idref="notas1.22.xhtml" />
+    <itemref idref="notas1.23.xhtml" />
+    <itemref idref="notas1.24.xhtml" />
+    <itemref idref="notas1.25.xhtml" />
+    <itemref idref="notas1.26.xhtml" />
+    <itemref idref="notas1.27.xhtml" />
+    <itemref idref="notas1.28.xhtml" />
+    <itemref idref="notas1.29.xhtml" />
+    <itemref idref="notas1.30.xhtml" />
+    <itemref idref="notas1.31.xhtml" />
+    <itemref idref="notas1.32.xhtml" />
+    <itemref idref="notas1.33.xhtml" />
+    <itemref idref="notas1.34.xhtml" />
+    <itemref idref="notas1.35.xhtml" />
+    <itemref idref="notas1.36.xhtml" />
+    <itemref idref="notas1.37.xhtml" />
+    <itemref idref="notas1.38.xhtml" />
+    <itemref idref="notas1.39.xhtml" />
+    <itemref idref="notas1.40.xhtml" />
+    <itemref idref="notas1.41.xhtml" />
+    <itemref idref="notas1.42.xhtml" />
+    <itemref idref="notas1.43.xhtml" />
+    <itemref idref="notas1.44.xhtml" />
+    <itemref idref="notas1.45.xhtml" />
+    <itemref idref="notas1.46.xhtml" />
+    <itemref idref="notas1.47.xhtml" />
+    <itemref idref="notas1.48.xhtml" />
+    <itemref idref="notas1.49.xhtml" />
+    <itemref idref="notas1.50.xhtml" />
+    <itemref idref="notas1.51.xhtml" />
+    <itemref idref="notas1.52.xhtml" />
+    <itemref idref="notas2.xhtml" />
+    <itemref idref="notas2.1.xhtml" />
+    <itemref idref="notas2.2.xhtml" />
+    <itemref idref="notas2.3.xhtml" />
+    <itemref idref="notas2.4.xhtml" />
+    <itemref idref="notas2.5.xhtml" />
+    <itemref idref="notas2.6.xhtml" />
+    <itemref idref="notas2.7.xhtml" />
+    <itemref idref="notas2.8.xhtml" />
+    <itemref idref="notas2.9.xhtml" />
+    <itemref idref="notas2.10.xhtml" />
+    <itemref idref="notas2.11.xhtml" />
+    <itemref idref="notas2.12.xhtml" />
+    <itemref idref="notas2.13.xhtml" />
+    <itemref idref="notas2.14.xhtml" />
+    <itemref idref="notas2.15.xhtml" />
+    <itemref idref="notas2.16.xhtml" />
+    <itemref idref="notas2.17.xhtml" />
+    <itemref idref="notas2.18.xhtml" />
+    <itemref idref="notas2.19.xhtml" />
+    <itemref idref="notas2.20.xhtml" />
+    <itemref idref="notas2.21.xhtml" />
+    <itemref idref="notas2.22.xhtml" />
+    <itemref idref="notas2.23.xhtml" />
+    <itemref idref="notas2.24.xhtml" />
+    <itemref idref="notas2.25.xhtml" />
+    <itemref idref="notas2.26.xhtml" />
+    <itemref idref="notas2.27.xhtml" />
+    <itemref idref="notas2.28.xhtml" />
+    <itemref idref="notas2.29.xhtml" />
+    <itemref idref="notas2.30.xhtml" />
+    <itemref idref="notas2.31.xhtml" />
+    <itemref idref="notas2.32.xhtml" />
+    <itemref idref="notas2.33.xhtml" />
+    <itemref idref="notas2.34.xhtml" />
+    <itemref idref="notas2.35.xhtml" />
+    <itemref idref="notas2.36.xhtml" />
+    <itemref idref="notas2.37.xhtml" />
+    <itemref idref="notas2.38.xhtml" />
+    <itemref idref="notas2.39.xhtml" />
+    <itemref idref="notas2.40.xhtml" />
+    <itemref idref="notas2.41.xhtml" />
+    <itemref idref="notas2.42.xhtml" />
+    <itemref idref="notas2.43.xhtml" />
+    <itemref idref="notas2.44.xhtml" />
+    <itemref idref="notas2.45.xhtml" />
+    <itemref idref="notas2.46.xhtml" />
+    <itemref idref="notas2.47.xhtml" />
+    <itemref idref="notas2.48.xhtml" />
+    <itemref idref="notas2.49.xhtml" />
+    <itemref idref="notas2.50.xhtml" />
+    <itemref idref="notas2.51.xhtml" />
+    <itemref idref="notas2.52.xhtml" />
+    <itemref idref="notas2.53.xhtml" />
+    <itemref idref="notas2.54.xhtml" />
+    <itemref idref="notas2.55.xhtml" />
+    <itemref idref="notas2.56.xhtml" />
+    <itemref idref="notas2.57.xhtml" />
+    <itemref idref="notas2.58.xhtml" />
+    <itemref idref="notas2.59.xhtml" />
+    <itemref idref="notas2.60.xhtml" />
+    <itemref idref="notas2.61.xhtml" />
+    <itemref idref="notas2.62.xhtml" />
+    <itemref idref="notas2.63.xhtml" />
+    <itemref idref="notas2.64.xhtml" />
+    <itemref idref="notas2.65.xhtml" />
+    <itemref idref="notas2.66.xhtml" />
+    <itemref idref="notas2.67.xhtml" />
+    <itemref idref="notas2.68.xhtml" />
+    <itemref idref="notas2.69.xhtml" />
+    <itemref idref="notas2.70.xhtml" />
+    <itemref idref="notas2.71.xhtml" />
+    <itemref idref="notas2.72.xhtml" />
+    <itemref idref="notas2.73.xhtml" />
+    <itemref idref="notas2.74.xhtml" />
+    <itemref idref="ntscoml.xhtml" />
+  </spine>
+  <guide>
+    <reference href="Text/cubierta.xhtml" title="Cover" type="cover" />
+  </guide>
+</package>

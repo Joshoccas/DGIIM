@@ -1,0 +1,14 @@
+
+Please type the input file name: 
+Please type the number of records to read: Please select the field to index for (UserID, Brand): 
+Please select the field to filter with (DateTime, UserID, Brand, Type): 
+Please indicate the output file (empty for no output file): 000 
+Money/DateTime
+      0.00
+
+
+Traffic/DateTime
+         0
+
+
+Highest traffic choice () with 0 hits.

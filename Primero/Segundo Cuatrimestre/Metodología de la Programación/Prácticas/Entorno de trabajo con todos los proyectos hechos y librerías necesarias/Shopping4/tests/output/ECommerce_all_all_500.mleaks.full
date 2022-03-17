@@ -1,0 +1,29 @@
+MEMORY LEAK REPORT BY Valgrind 
+
+vie abr 16 09:34:57 CEST 2021
+
+
+==17788== Memcheck, a memory error detector
+==17788== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17788== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17788== Command: ./dist/Debug/GNU-Linux/shopping2
+==17788== 
+
+[eventS] 500 6666281081704581576
+
+[purchaseSet] 30 5235127575259468424
+
+[weeklyData] 7 SUNDAY( 1.00) MONDAY( 4.00) TUESDAY( 6.00) WEDNESDAY( 5.00) THURSDAY( 6.00) FRIDAY( 5.00) SATURDAY( 3.00) 
+
+[brandData] 18 uskusi( 3.97) staleks( 2.46) milv( 0.79) bpw.style( 0.95) domix( 6.28) (49.95) bluesky( 3.97) cosmoprofi( 4.76) irisk( 2.48) uno( 7.78) runail( 8.75) estel( 2.38) fancy( 5.71) browxenna(19.52) limoni( 6.84) masura( 1.73) grattol( 1.90) rosi(12.70) 
+
+[usersData] 30 525972312( 1.00) 558384972( 1.00) 505642737( 1.00) 537657392( 1.00) 265922658( 1.00) 532031134( 1.00) 568590376( 1.00) 560934386( 1.00) 606488864( 1.00) 466364373( 1.00) 549221392( 1.00) 509105449( 1.00) 551797846( 1.00) 514161649( 1.00) 462025793( 1.00) 439251968( 1.00) 558894174( 1.00) 604100373( 1.00) 456131229( 1.00) 602984937( 1.00) 538197388( 1.00) 566746898( 1.00) 303281558( 1.00) 468092362( 1.00) 582416929( 1.00) 565980020( 1.00) 432435010( 1.00) 540621761( 1.00) 582530115( 1.00) 545999008( 1.00) 
+==17788== 
+==17788== HEAP SUMMARY:
+==17788==     in use at exit: 0 bytes in 0 blocks
+==17788==   total heap usage: 61,881 allocs, 61,881 frees, 2,119,842 bytes allocated
+==17788== 
+==17788== All heap blocks were freed -- no leaks are possible
+==17788== 
+==17788== For counts of detected and suppressed errors, rerun with: -v
+==17788== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

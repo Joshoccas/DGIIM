@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>include/DateTime.h</itemPath>
+      <itemPath>include/Event.h</itemPath>
+      <itemPath>include/EventSet.h</itemPath>
+      <itemPath>include/Index.h</itemPath>
+      <itemPath>include/Pair.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>src/DateTime.cpp</itemPath>
+      <itemPath>src/Event.cpp</itemPath>
+      <itemPath>src/EventSet.cpp</itemPath>
+      <itemPath>src/Index.cpp</itemPath>
+      <itemPath>src/Pair.cpp</itemPath>
+      <itemPath>src/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="Shopping3_Tests"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/01.UnitDateTime.cpp</itemPath>
+        <itemPath>tests/02.UnitEvent.cpp</itemPath>
+        <itemPath>tests/03.UnitEventSet.cpp</itemPath>
+        <itemPath>tests/04.UnitPair.cpp</itemPath>
+        <itemPath>tests/05.UnitIndex.cpp</itemPath>
+        <itemPath>tests/10.Integration_WEEK_2.cpp</itemPath>
+        <itemPath>tests/10.Integration_WEEK_3.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>11</standard>
+          <incDir>
+            <pElem>../MPTest/include</pElem>
+            <pElem>../googletest-master/googletest/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include</pElem>
+            <pElem>../AnsiTerminal/include</pElem>
+            <pElem>../DataTable/include</pElem>
+          </incDir>
+          <incFile>
+            <pElem>include/DateTime.h</pElem>
+            <pElem>include/Event.h</pElem>
+            <pElem>include/EventSet.h</pElem>
+          </incFile>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../AnsiTerminal"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../AnsiTerminal"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libansiterminal.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../DataTable"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../DataTable"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libdatatable.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <folder path="HeaderFiles">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="SourceFiles">
+        <ccTool>
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="TestFiles">
+        <ccTool>
+          <preprocessorList>
+            <Elem>__INTEGRATION__</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../Gtest"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../Gtest"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libgtest.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+          </linkerLibItems>
+          <commandLine>-pthread</commandLine>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="include/DateTime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EventSet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Index.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Pair.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DateTime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Event.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/EventSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Index.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Pair.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/01.UnitDateTime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/02.UnitEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/03.UnitEventSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/04.UnitPair.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/05.UnitIndex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/10.Integration_WEEK_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/10.Integration_WEEK_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>11</standard>
+          <incDir>
+            <pElem>../MPTest/include</pElem>
+            <pElem>../googletest-master/googletest/include</pElem>
+            <pElem>include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>__RELEASE__</Elem>
+          </preprocessorList>
+        </ccTool>
+      </compileType>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="include/DateTime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EventSet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Index.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Pair.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DateTime.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="src/Event.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="src/EventSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Index.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Pair.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="tests/01.UnitDateTime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/02.UnitEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/03.UnitEventSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/04.UnitPair.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/05.UnitIndex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/10.Integration_WEEK_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/10.Integration_WEEK_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

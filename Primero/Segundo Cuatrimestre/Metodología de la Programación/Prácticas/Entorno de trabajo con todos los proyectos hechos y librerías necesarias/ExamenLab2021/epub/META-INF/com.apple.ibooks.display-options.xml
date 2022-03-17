@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<display_options>
+	
+                                
+	<platform name="*">
+		
+                                
+		<option name="specified-fonts">true</option>
+		
+                                
+	</platform>
+	
+                                
+</display_options>

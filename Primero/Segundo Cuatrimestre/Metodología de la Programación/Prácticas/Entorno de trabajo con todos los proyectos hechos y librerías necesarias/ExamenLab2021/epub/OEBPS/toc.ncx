@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+ "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="urn:uuid:9b8bb780-e414-11e2-a28f-0800200c9a66" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Don Quijote de la Mancha</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+      <navLabel>
+        <text>Cubierta</text>
+      </navLabel>
+      <content src="Text/cubierta.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-2" playOrder="2">
+      <navLabel>
+        <text>Don Quijote de la Mancha</text>
+      </navLabel>
+      <content src="Text/titulo.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-3" playOrder="3">
+      <navLabel>
+        <text>Presentación</text>
+      </navLabel>
+      <content src="Text/presentacion.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-4" playOrder="4">
+      <navLabel>
+        <text>Mario Vargas Llosa: Una novela para el siglo XXI</text>
+      </navLabel>
+      <content src="Text/vargasllosa.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-5" playOrder="5">
+      <navLabel>
+        <text>Francisco Ayala: La invención del «Quijote»</text>
+      </navLabel>
+      <content src="Text/fayala.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-6" playOrder="6">
+      <navLabel>
+        <text>Martín de Riquer: Cervantes y el «Quijote»</text>
+      </navLabel>
+      <content src="Text/mriquer.xhtml"/>
+      <navPoint id="navPoint-7" playOrder="7">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="Text/mriquer.xhtml#sigil_toc_id_1"/>
+      </navPoint>
+      <navPoint id="navPoint-8" playOrder="8">
+        <navLabel>
+          <text>2</text>
+        </navLabel>
+        <content src="Text/mriquer.xhtml#sigil_toc_id_2"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-9" playOrder="9">
+      <navLabel>
+        <text>Franciso Rico: Nota al texto</text>
+      </navLabel>
+      <content src="Text/frico.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-10" playOrder="10">
+      <navLabel>
+        <text>EL INGENIOSO HIDALGO DON QUIJOTE DE LA MANCHA (1605)</text>
+      </navLabel>
+      <content src="Text/primeraparte.xhtml"/>
+      <navPoint id="navPoint-11" playOrder="11">
+        <navLabel>
+          <text>PRELIMINARES</text>
+        </navLabel>
+        <content src="Text/intro1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-12" playOrder="12">
+        <navLabel>
+          <text>PRIMERA PARTE</text>
+        </navLabel>
+        <content src="Text/primera.xhtml"/>
+        <navPoint id="navPoint-13" playOrder="13">
+          <navLabel>
+            <text>CAPÍTULO PRIMERO</text>
+          </navLabel>
+          <content src="Text/1.1.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-14" playOrder="14">
+          <navLabel>
+            <text>CAPITULO II</text>
+          </navLabel>
+          <content src="Text/1.2.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-15" playOrder="15">
+          <navLabel>
+            <text>CAPÍTULO III</text>
+          </navLabel>
+          <content src="Text/1.3.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-16" playOrder="16">
+          <navLabel>
+            <text>CAPÍTULO IV</text>
+          </navLabel>
+          <content src="Text/1.4.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-17" playOrder="17">
+          <navLabel>
+            <text>CAPÍTULO V</text>
+          </navLabel>
+          <content src="Text/1.5.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-18" playOrder="18">
+          <navLabel>
+            <text>CAPÍTULO VI</text>
+          </navLabel>
+          <content src="Text/1.6.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-19" playOrder="19">
+          <navLabel>
+            <text>CAPÍTULO VII</text>
+          </navLabel>
+          <content src="Text/1.7.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-20" playOrder="20">
+          <navLabel>
+            <text>CAPÍTULO VIII</text>
+          </navLabel>
+          <content src="Text/1.8.xhtml"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-21" playOrder="21">
+        <navLabel>
+          <text>SEGUNDA PARTE</text>
+        </navLabel>
+        <content src="Text/segunda.xhtml"/>
+        <navPoint id="navPoint-22" playOrder="22">
+          <navLabel>
+            <text>CAPÍTULO IX</text>
+          </navLabel>
+          <content src="Text/1.9.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-23" playOrder="23">
+          <navLabel>
+            <text>CAPÍTULO X</text>
+          </navLabel>
+          <content src="Text/1.10.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-24" playOrder="24">
+          <navLabel>
+            <text>CAPÍTULO XI</text>
+          </navLabel>
+          <content src="Text/1.11.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-25" playOrder="25">
+          <navLabel>
+            <text>CAPÍTULO XII</text>
+          </navLabel>
+          <content src="Text/1.12.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-26" playOrder="26">
+          <navLabel>
+            <text>CAPÍTULO XIII</text>
+          </navLabel>
+          <content src="Text/1.13.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-27" playOrder="27">
+          <navLabel>
+            <text>CAPÍTULO XIV</text>
+          </navLabel>
+          <content src="Text/1.14.xhtml"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-28" playOrder="28">
+        <navLabel>
+          <text>TERCERA PARTE</text>
+        </navLabel>
+        <content src="Text/tercera.xhtml"/>
+        <navPoint id="navPoint-29" playOrder="29">
+          <navLabel>
+            <text>CAPÍTULO XV</text>
+          </navLabel>
+          <content src="Text/1.15.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-30" playOrder="30">
+          <navLabel>
+            <text>CAPÍTULO XVI</text>
+          </navLabel>
+          <content src="Text/1.16.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-31" playOrder="31">
+          <navLabel>
+            <text>CAPÍTULO XVII</text>
+          </navLabel>
+          <content src="Text/1.17.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-32" playOrder="32">
+          <navLabel>
+            <text>CAPÍTULO XVIII</text>
+          </navLabel>
+          <content src="Text/1.18.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-33" playOrder="33">
+          <navLabel>
+            <text>CAPÍTULO XIX</text>
+          </navLabel>
+          <content src="Text/1.19.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-34" playOrder="34">
+          <navLabel>
+            <text>CAPÍTULO XX</text>
+          </navLabel>
+          <content src="Text/1.20.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-35" playOrder="35">
+          <navLabel>
+            <text>CAPÍTULO XXI</text>
+          </navLabel>
+          <content src="Text/1.21.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-36" playOrder="36">
+          <navLabel>
+            <text>CAPÍTULO XXII</text>
+          </navLabel>
+          <content src="Text/1.22.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-37" playOrder="37">
+          <navLabel>
+            <text>CAPÍTULO XXIII</text>
+          </navLabel>
+          <content src="Text/1.23.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-38" playOrder="38">
+          <navLabel>
+            <text>CAPÍTULO XXIV</text>
+          </navLabel>
+          <content src="Text/1.24.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-39" playOrder="39">
+          <navLabel>
+            <text>CAPÍTULO XXV</text>
+          </navLabel>
+          <content src="Text/1.25.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-40" playOrder="40">
+          <navLabel>
+            <text>CAPÍTULO XXVI</text>
+          </navLabel>
+          <content src="Text/1.26.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-41" playOrder="41">
+          <navLabel>
+            <text>CAPÍTULO XXVII</text>
+          </navLabel>
+          <content src="Text/1.27.xhtml"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-42" playOrder="42">
+        <navLabel>
+          <text>CUARTA PARTE</text>
+        </navLabel>
+        <content src="Text/cuarta.xhtml"/>
+        <navPoint id="navPoint-43" playOrder="43">
+          <navLabel>
+            <text>CAPÍTULO XXVIII</text>
+          </navLabel>
+          <content src="Text/1.28.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-44" playOrder="44">
+          <navLabel>
+            <text>CAPÍTULO XXIX</text>
+          </navLabel>
+          <content src="Text/1.29.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-45" playOrder="45">
+          <navLabel>
+            <text>CAPÍTULO XXX</text>
+          </navLabel>
+          <content src="Text/1.30.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-46" playOrder="46">
+          <navLabel>
+            <text>CAPÍTULO XXXI</text>
+          </navLabel>
+          <content src="Text/1.31.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-47" playOrder="47">
+          <navLabel>
+            <text>CAPÍTULO XXXII</text>
+          </navLabel>
+          <content src="Text/1.32.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-48" playOrder="48">
+          <navLabel>
+            <text>CAPÍTULO XXXIII</text>
+          </navLabel>
+          <content src="Text/1.33.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-49" playOrder="49">
+          <navLabel>
+            <text>CAPÍTULO XXXIV</text>
+          </navLabel>
+          <content src="Text/1.34.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-50" playOrder="50">
+          <navLabel>
+            <text>CAPÍTULO XXXV</text>
+          </navLabel>
+          <content src="Text/1.35.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-51" playOrder="51">
+          <navLabel>
+            <text>CAPÍTULO XXXVI</text>
+          </navLabel>
+          <content src="Text/1.36.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-52" playOrder="52">
+          <navLabel>
+            <text>CAPÍTULO XXXVII</text>
+          </navLabel>
+          <content src="Text/1.37.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-53" playOrder="53">
+          <navLabel>
+            <text>CAPÍTULO XXXVIII</text>
+          </navLabel>
+          <content src="Text/1.38.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-54" playOrder="54">
+          <navLabel>
+            <text>CAPÍTULO XXXIX</text>
+          </navLabel>
+          <content src="Text/1.39.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-55" playOrder="55">
+          <navLabel>
+            <text>CAPÍTULO XL</text>
+          </navLabel>
+          <content src="Text/1.40.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-56" playOrder="56">
+          <navLabel>
+            <text>CAPÍTULO XLI</text>
+          </navLabel>
+          <content src="Text/1.41.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-57" playOrder="57">
+          <navLabel>
+            <text>CAPÍTULO XLII</text>
+          </navLabel>
+          <content src="Text/1.42.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-58" playOrder="58">
+          <navLabel>
+            <text>CAPÍTULO XLIII</text>
+          </navLabel>
+          <content src="Text/1.43.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-59" playOrder="59">
+          <navLabel>
+            <text>CAPÍTULO XLIV</text>
+          </navLabel>
+          <content src="Text/1.44.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-60" playOrder="60">
+          <navLabel>
+            <text>CAPÍTULO XLV</text>
+          </navLabel>
+          <content src="Text/1.45.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-61" playOrder="61">
+          <navLabel>
+            <text>CAPÍTULO XLVI</text>
+          </navLabel>
+          <content src="Text/1.46.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-62" playOrder="62">
+          <navLabel>
+            <text>CAPÍTULO XLVII</text>
+          </navLabel>
+          <content src="Text/1.47.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-63" playOrder="63">
+          <navLabel>
+            <text>CAPÍTULO XLVIII</text>
+          </navLabel>
+          <content src="Text/1.48.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-64" playOrder="64">
+          <navLabel>
+            <text>CAPÍTULO XLIX</text>
+          </navLabel>
+          <content src="Text/1.49.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-65" playOrder="65">
+          <navLabel>
+            <text>CAPÍTULO L</text>
+          </navLabel>
+          <content src="Text/1.50.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-66" playOrder="66">
+          <navLabel>
+            <text>CAPÍTULO LI</text>
+          </navLabel>
+          <content src="Text/1.51.xhtml"/>
+        </navPoint>
+        <navPoint id="navPoint-67" playOrder="67">
+          <navLabel>
+            <text>CAPÍTULO LII</text>
+          </navLabel>
+          <content src="Text/1.52.xhtml"/>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-68" playOrder="68">
+      <navLabel>
+        <text>EL INGENIOSO CABALLERO DON QUIJOTE DE LA MANCHA (1615)</text>
+      </navLabel>
+      <content src="Text/Parte2.xhtml"/>
+      <navPoint id="navPoint-69" playOrder="69">
+        <navLabel>
+          <text>CAPÍTULO PRIMERO</text>
+        </navLabel>
+        <content src="Text/2.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-70" playOrder="70">
+        <navLabel>
+          <text>CAPÍTULO II</text>
+        </navLabel>
+        <content src="Text/2.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-71" playOrder="71">
+        <navLabel>
+          <text>CAPÍTULO III</text>
+        </navLabel>
+        <content src="Text/2.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-72" playOrder="72">
+        <navLabel>
+          <text>CAPÍTULO IV</text>
+        </navLabel>
+        <content src="Text/2.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-73" playOrder="73">
+        <navLabel>
+          <text>CAPÍTULO V</text>
+        </navLabel>
+        <content src="Text/2.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-74" playOrder="74">
+        <navLabel>
+          <text>CAPÍTULO VI</text>
+        </navLabel>
+        <content src="Text/2.6.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-75" playOrder="75">
+        <navLabel>
+          <text>CAPÍTULO VII</text>
+        </navLabel>
+        <content src="Text/2.7.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-76" playOrder="76">
+        <navLabel>
+          <text>CAPÍTULO VIII</text>
+        </navLabel>
+        <content src="Text/2.8.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-77" playOrder="77">
+        <navLabel>
+          <text>CAPÍTULO IX</text>
+        </navLabel>
+        <content src="Text/2.9.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-78" playOrder="78">
+        <navLabel>
+          <text>CAPÍTULO X</text>
+        </navLabel>
+        <content src="Text/2.10.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-79" playOrder="79">
+        <navLabel>
+          <text>CAPÍTULO XI</text>
+        </navLabel>
+        <content src="Text/2.11.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-80" playOrder="80">
+        <navLabel>
+          <text>CAPÍTULO XII</text>
+        </navLabel>
+        <content src="Text/2.12.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-81" playOrder="81">
+        <navLabel>
+          <text>CAPÍTULO XIII</text>
+        </navLabel>
+        <content src="Text/2.13.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-82" playOrder="82">
+        <navLabel>
+          <text>CAPÍTULO XIV</text>
+        </navLabel>
+        <content src="Text/2.14.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-83" playOrder="83">
+        <navLabel>
+          <text>CAPÍTULO XV</text>
+        </navLabel>
+        <content src="Text/2.15.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-84" playOrder="84">
+        <navLabel>
+          <text>CAPÍTULO XVI</text>
+        </navLabel>
+        <content src="Text/2.16.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-85" playOrder="85">
+        <navLabel>
+          <text>CAPÍTULO XVII</text>
+        </navLabel>
+        <content src="Text/2.17.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-86" playOrder="86">
+        <navLabel>
+          <text>CAPÍTULO XVIII</text>
+        </navLabel>
+        <content src="Text/2.18.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-87" playOrder="87">
+        <navLabel>
+          <text>CAPÍTULO XIX</text>
+        </navLabel>
+        <content src="Text/2.19.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-88" playOrder="88">
+        <navLabel>
+          <text>CAPÍTULO XX</text>
+        </navLabel>
+        <content src="Text/2.20.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-89" playOrder="89">
+        <navLabel>
+          <text>CAPÍTULO XXI</text>
+        </navLabel>
+        <content src="Text/2.21.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-90" playOrder="90">
+        <navLabel>
+          <text>CAPÍTULO XXII</text>
+        </navLabel>
+        <content src="Text/2.22.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-91" playOrder="91">
+        <navLabel>
+          <text>CAPÍTULO XXIII</text>
+        </navLabel>
+        <content src="Text/2.23.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-92" playOrder="92">
+        <navLabel>
+          <text>CAPÍTULO XXIV</text>
+        </navLabel>
+        <content src="Text/2.24.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-93" playOrder="93">
+        <navLabel>
+          <text>CAPÍTULO XXV</text>
+        </navLabel>
+        <content src="Text/2.25.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-94" playOrder="94">
+        <navLabel>
+          <text>CAPÍTULO XXVI</text>
+        </navLabel>
+        <content src="Text/2.26.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-95" playOrder="95">
+        <navLabel>
+          <text>CAPÍTULO XXVII</text>
+        </navLabel>
+        <content src="Text/2.27.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-96" playOrder="96">
+        <navLabel>
+          <text>CAPÍTULO XXVIII</text>
+        </navLabel>
+        <content src="Text/2.28.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-97" playOrder="97">
+        <navLabel>
+          <text>CAPÍTULO XXIX</text>
+        </navLabel>
+        <content src="Text/2.29.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-98" playOrder="98">
+        <navLabel>
+          <text>CAPÍTULO XXX</text>
+        </navLabel>
+        <content src="Text/2.30.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-99" playOrder="99">
+        <navLabel>
+          <text>CAPÍTULO XXXI</text>
+        </navLabel>
+        <content src="Text/2.31.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-100" playOrder="100">
+        <navLabel>
+          <text>CAPÍTULO XXXII</text>
+        </navLabel>
+        <content src="Text/2.32.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-101" playOrder="101">
+        <navLabel>
+          <text>CAPÍTULO XXXIII</text>
+        </navLabel>
+        <content src="Text/2.33.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-102" playOrder="102">
+        <navLabel>
+          <text>CAPÍTULO XXXIV</text>
+        </navLabel>
+        <content src="Text/2.34.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-103" playOrder="103">
+        <navLabel>
+          <text>CAPÍTULO XXXV</text>
+        </navLabel>
+        <content src="Text/2.35.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-104" playOrder="104">
+        <navLabel>
+          <text>CAPÍTULO XXXVI</text>
+        </navLabel>
+        <content src="Text/2.36.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-105" playOrder="105">
+        <navLabel>
+          <text>CAPÍTULO XXXVII</text>
+        </navLabel>
+        <content src="Text/2.37.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-106" playOrder="106">
+        <navLabel>
+          <text>CAPÍTULO XXXVIII</text>
+        </navLabel>
+        <content src="Text/2.38.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-107" playOrder="107">
+        <navLabel>
+          <text>CAPÍTULO XXXIX</text>
+        </navLabel>
+        <content src="Text/2.39.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-108" playOrder="108">
+        <navLabel>
+          <text>CAPÍTULO XL</text>
+        </navLabel>
+        <content src="Text/2.40.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-109" playOrder="109">
+        <navLabel>
+          <text>CAPÍTULO XLI</text>
+        </navLabel>
+        <content src="Text/2.41.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-110" playOrder="110">
+        <navLabel>
+          <text>CAPÍTULO XLII</text>
+        </navLabel>
+        <content src="Text/2.42.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-111" playOrder="111">
+        <navLabel>
+          <text>CAPÍTULO XLIII</text>
+        </navLabel>
+        <content src="Text/2.43.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-112" playOrder="112">
+        <navLabel>
+          <text>CAPÍTULO XLIV</text>
+        </navLabel>
+        <content src="Text/2.44.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-113" playOrder="113">
+        <navLabel>
+          <text>CAPÍTULO XLV</text>
+        </navLabel>
+        <content src="Text/2.45.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-114" playOrder="114">
+        <navLabel>
+          <text>CAPÍTULO XLVI</text>
+        </navLabel>
+        <content src="Text/2.46.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-115" playOrder="115">
+        <navLabel>
+          <text>CAPÍTULO XLVII</text>
+        </navLabel>
+        <content src="Text/2.47.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-116" playOrder="116">
+        <navLabel>
+          <text>CAPÍTULO XLVIII</text>
+        </navLabel>
+        <content src="Text/2.48.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-117" playOrder="117">
+        <navLabel>
+          <text>CAPÍTULO XLIX</text>
+        </navLabel>
+        <content src="Text/2.49.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-118" playOrder="118">
+        <navLabel>
+          <text>CAPÍTULO L</text>
+        </navLabel>
+        <content src="Text/2.50.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-119" playOrder="119">
+        <navLabel>
+          <text>CAPÍTULO LI</text>
+        </navLabel>
+        <content src="Text/2.51.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-120" playOrder="120">
+        <navLabel>
+          <text>CAPÍTULO LII</text>
+        </navLabel>
+        <content src="Text/2.52.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-121" playOrder="121">
+        <navLabel>
+          <text>CAPÍTULO LIII</text>
+        </navLabel>
+        <content src="Text/2.53.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-122" playOrder="122">
+        <navLabel>
+          <text>CAPÍTULO LIV</text>
+        </navLabel>
+        <content src="Text/2.54.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-123" playOrder="123">
+        <navLabel>
+          <text>CAPÍTULO LV</text>
+        </navLabel>
+        <content src="Text/2.55.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-124" playOrder="124">
+        <navLabel>
+          <text>CAPÍTULO LVI</text>
+        </navLabel>
+        <content src="Text/2.56.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-125" playOrder="125">
+        <navLabel>
+          <text>CAPÍTULO LVII</text>
+        </navLabel>
+        <content src="Text/2.57.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-126" playOrder="126">
+        <navLabel>
+          <text>CAPÍTULO LVIII</text>
+        </navLabel>
+        <content src="Text/2.58.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-127" playOrder="127">
+        <navLabel>
+          <text>CAPÍTULO LIX</text>
+        </navLabel>
+        <content src="Text/2.59.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-128" playOrder="128">
+        <navLabel>
+          <text>CAPÍTULO LX</text>
+        </navLabel>
+        <content src="Text/2.60.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-129" playOrder="129">
+        <navLabel>
+          <text>CAPÍTULO LXI</text>
+        </navLabel>
+        <content src="Text/2.61.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-130" playOrder="130">
+        <navLabel>
+          <text>CAPÍTULO LXII</text>
+        </navLabel>
+        <content src="Text/2.62.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-131" playOrder="131">
+        <navLabel>
+          <text>CAPÍTULO LXIII</text>
+        </navLabel>
+        <content src="Text/2.63.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-132" playOrder="132">
+        <navLabel>
+          <text>CAPÍTULO LXIV</text>
+        </navLabel>
+        <content src="Text/2.64.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-133" playOrder="133">
+        <navLabel>
+          <text>CAPÍTULO LXV</text>
+        </navLabel>
+        <content src="Text/2.65.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-134" playOrder="134">
+        <navLabel>
+          <text>CAPÍTULO LXVI</text>
+        </navLabel>
+        <content src="Text/2.66.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-135" playOrder="135">
+        <navLabel>
+          <text>CAPÍTULO LXVII</text>
+        </navLabel>
+        <content src="Text/2.67.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-136" playOrder="136">
+        <navLabel>
+          <text>CAPÍTULO LXVIII</text>
+        </navLabel>
+        <content src="Text/2.68.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-137" playOrder="137">
+        <navLabel>
+          <text>CAPÍTULO LXIX</text>
+        </navLabel>
+        <content src="Text/2.69.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-138" playOrder="138">
+        <navLabel>
+          <text>CAPÍTULO LXX</text>
+        </navLabel>
+        <content src="Text/2.70.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-139" playOrder="139">
+        <navLabel>
+          <text>CAPÍTULO LXXI</text>
+        </navLabel>
+        <content src="Text/2.71.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-140" playOrder="140">
+        <navLabel>
+          <text>CAPÍTULO LXXII</text>
+        </navLabel>
+        <content src="Text/2.72.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-141" playOrder="141">
+        <navLabel>
+          <text>CAPÍTULO LXXIII</text>
+        </navLabel>
+        <content src="Text/2.73.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-142" playOrder="142">
+        <navLabel>
+          <text>CAPÍTULO LXXIV</text>
+        </navLabel>
+        <content src="Text/2.74.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-143" playOrder="143">
+      <navLabel>
+        <text>NOTA COMPLEMENTARIA LA PÉRDIDA DEL RUCIO SEGÚN LA SEGUNDA Y LA TERCERA EDICIÓN</text>
+      </navLabel>
+      <content src="Text/compl.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-144" playOrder="144">
+      <navLabel>
+        <text>Notas I</text>
+      </navLabel>
+      <content src="Text/notas1.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-145" playOrder="145">
+      <navLabel>
+        <text>Notas II</text>
+      </navLabel>
+      <content src="Text/notas2.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,16 @@
+ 2021-03-01 10:32:00 UTC,view,Product_0_0,,,Brand_000,1.000000,User_000,Session_0_0
+2021-03-02 10:32:00 UTC,view,Product_1_0,,,Brand_001,2.000000,User_000,Session_0_1
+2021-03-03 10:32:00 UTC,view,Product_2_0,,,Brand_002,3.000000,User_000,Session_0_2
+2021-03-04 10:32:00 UTC,cart,Product_3_0,,,Brand_003,4.000000,User_000,Session_1_3
+2021-03-05 10:32:00 UTC,cart,Product_4_0,,,Brand_004,5.000000,User_000,Session_1_4
+2021-03-01 10:32:00 UTC,cart,Product_0_1,,,Brand_000,1.000000,User_001,Session_1_5
+2021-03-02 10:32:00 UTC,purchase,Product_1_1,,,Brand_001,2.000000,User_001,Session_2_6
+2021-03-03 10:32:00 UTC,purchase,Product_2_1,,,Brand_002,3.000000,User_001,Session_2_7
+2021-03-04 10:32:00 UTC,purchase,Product_3_1,,,Brand_003,4.000000,User_001,Session_2_8
+2021-03-05 10:32:00 UTC,remove_from_cart,Product_4_1,,,Brand_004,5.000000,User_001,Session_3_9
+2021-03-01 10:32:00 UTC,remove_from_cart,Product_0_2,,,Brand_000,1.000000,User_002,Session_3_10
+2021-03-02 10:32:00 UTC,remove_from_cart,Product_1_2,,,Brand_001,2.000000,User_002,Session_3_11
+2021-03-03 10:32:00 UTC,view,Product_2_2,,,Brand_002,3.000000,User_002,Session_4_12
+2021-03-04 10:32:00 UTC,view,Product_3_2,,,Brand_003,4.000000,User_002,Session_4_13
+2021-03-05 10:32:00 UTC,view,Product_4_2,,,Brand_004,5.000000,User_002,Session_4_14
+

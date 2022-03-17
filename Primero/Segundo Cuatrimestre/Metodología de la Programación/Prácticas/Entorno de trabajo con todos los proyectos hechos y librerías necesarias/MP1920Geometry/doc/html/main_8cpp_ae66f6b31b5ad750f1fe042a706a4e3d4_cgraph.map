@@ -1,0 +1,16 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classRectangle.html#a31c4b9fc0d1ddf912f114da494e50205" title="Initializes the data of the rectangle. " alt="" coords="460,65,624,91"/>
+<area shape="rect" id="node5" href="$classRectangle.html#a4e315c59754599c74e99e8b31f7031a0" title="Prints the rectangle in the form [Point2D &#45; Point2D]. " alt="" coords="104,90,219,117"/>
+<area shape="rect" id="node6" href="$classPoint2D.html#a4be0cc5bb62eef12bfa55ced97d03535" title="Prints the XY values in the screen in the form (X,Y) " alt="" coords="284,65,387,91"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a888d2b0113947b4461107bb02b28799d" title="doOverlap" alt="" coords="295,141,376,167"/>
+<area shape="rect" id="node8" href="$classPoint2D.html#a5cb1c2584e5b2bada0226a3e32aa2b1a" title="Queries the X coordinate. " alt="" coords="490,242,594,269"/>
+<area shape="rect" id="node9" href="$classPoint2D.html#a53d10f2e460c47a493a3fbadfbafbb64" title="Queries the Y coordinate. " alt="" coords="490,330,594,357"/>
+<area shape="rect" id="node10" href="$classRectangle.html#af6973ed3094f9dbabeadb071772fa76d" title="Reads the two points of the rectangle. " alt="" coords="104,343,219,370"/>
+<area shape="rect" id="node11" href="$classPoint2D.html#ac13d12003e2da9afee19a6a3f526c660" title="Reads the XY value from keyboard. " alt="" coords="284,318,387,345"/>
+<area shape="rect" id="node12" href="$classRectangle.html#af732bce8c96d2469994825e9a87dbe5f" title="For a rectangle to be valid this condition must hold topleft.getX() &lt; = bottomright.getX() &amp;&amp; topleft.getY() &gt; = bottomright.getY() otherwise it is an empty (incorrect) rectangle. " alt="" coords="267,242,404,269"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a5fe7cf71c1f13eed4b8144d0e00dc58d" title="Calculates whether a point is internal to a rectangle. " alt="" coords="302,445,369,471"/>
+<area shape="rect" id="node3" href="$classPoint2D.html#af268842e8f2e6072ffe345dc2f322046" title="Initializes the X coordinate. " alt="" coords="680,154,784,181"/>
+<area shape="rect" id="node4" href="$classPoint2D.html#a0e08240b54e6eaae92c979082da1c91c" title="Initializes the Y coordinate. " alt="" coords="680,90,784,117"/>
+<area shape="rect" id="node14" href="$classRectangle.html#a812afd6deed0cdec0b4ad7b2bd93871d" title="Queries the top&#45;left corner. " alt="" coords="467,470,617,497"/>
+<area shape="rect" id="node15" href="$classRectangle.html#a5f30a92f3fc197dda50d9e59995d3ac1" title="Queries the bottom&#45;right corner. " alt="" coords="452,419,632,446"/>
+</map>

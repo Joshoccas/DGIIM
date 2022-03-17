@@ -1,0 +1,5 @@
+# SIMPLIFIED MEMORY LEAK REPORT BY Valgrind 
+
+mar 23 mar 2021 18:07:06 CET
+
+

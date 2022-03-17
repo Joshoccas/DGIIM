@@ -1,0 +1,13 @@
+4 3 8 0 
+0 0
+1 1
+-1 0
+
+%%%CALL < tests/v_0inside.test
+%%%OUTPUT
+First rectangle is [(2,5) - (5,2)] 
+Type second rectangle: 
+Calculating intersection of: [(2,5) - (5,2)]  and [(4,3) - (8,0)] 
+The intersection is: [(4,3) - (5,2)] 
+Reading points... None of them falls within the intersection 
+

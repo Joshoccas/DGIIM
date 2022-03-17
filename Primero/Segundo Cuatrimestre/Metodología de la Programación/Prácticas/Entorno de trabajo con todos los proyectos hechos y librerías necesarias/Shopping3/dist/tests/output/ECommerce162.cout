@@ -1,0 +1,15 @@
+Please use: -input <filename> -events <number> -index-by UserID|Brand [-report-by UserID|Brand|Type|DateTime -output <filename>]
+
+-input <filename>
+	Read events from dataset in <filename>
+-events <number>
+	Number of events to read
+-index-by <field>
+	Field to index by. It can only be UserID or Brand
+
+Optional arguments
+-report-by <field>
+	Field to report by. It can only be UserID, Brand, Type or DateTime. The default value is Brand
+-output <filename>
+	File to save the dataset of the field selected with -index-by with maximum traffic. If not specified, it does not save anything
+
