@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p04_tdas_no_lineales",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bolsa::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bolsa-Debug-074728790a6a562d0b9f.json",
+					"name" : "bolsa",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bolsa_letras::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bolsa_letras-Debug-a9bc1054c4a354d542ee.json",
+					"name" : "bolsa_letras",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cantidad_letras::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cantidad_letras-Debug-b5fd9f65a2f68beaa62d.json",
+					"name" : "cantidad_letras",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "conjunto_letras::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-conjunto_letras-Debug-96b8ff3e282e682f8b0d.json",
+					"name" : "conjunto_letras",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc_doxygen-Debug-d7734cbeb4acca474c4d.json",
+					"name" : "doc_doxygen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "palabras_longitud::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-palabras_longitud-Debug-2df50bd3ba9d3682a436.json",
+					"name" : "palabras_longitud",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug",
+		"source" : "/home/agd3/Desktop/ED/practica4-tdas_letras"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

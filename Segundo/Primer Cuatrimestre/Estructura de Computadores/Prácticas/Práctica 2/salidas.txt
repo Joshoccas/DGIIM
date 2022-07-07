@@ -1,0 +1,319 @@
+EJERCICIO 5.1 (suma.s)
+
+suma = 16 = 0x10 hex
+
+EJERCICIO 5.2 (suma2.s)
+
+__TEST01__-----------------------------------
+resultado 	 =                   16 (uns)
+		 = 0x                10 (hex)
+		 = 0x 00000000 00000010 
+__TEST02__-----------------------------------
+resultado 	 =           4294967280 (uns)
+		 = 0x          fffffff0 (hex)
+		 = 0x 00000000 fffffff0 
+__TEST03__-----------------------------------
+resultado 	 =           4294967296 (uns)
+		 = 0x         100000000 (hex)
+		 = 0x 00000001 00000000 
+__TEST04__-----------------------------------
+resultado 	 =          68719476720 (uns)
+		 = 0x         ffffffff0 (hex)
+		 = 0x 0000000f fffffff0 
+__TEST05__-----------------------------------
+resultado 	 =           3200000000 (uns)
+		 = 0x          bebc2000 (hex)
+		 = 0x 00000000 bebc2000 
+__TEST06__-----------------------------------
+resultado 	 =           4800000000 (uns)
+		 = 0x         11e1a3000 (hex)
+		 = 0x 00000001 1e1a3000 
+
+EJERCICIO 5.3 (suma3.s)
+
+__TEST01__-----------------------------------
+resultado 	 =                  -16 (sgn)
+		 = 0x  fffffffffffffff0 (hex)
+		 = 0x ffffffff fffffff0 
+__TEST02__-----------------------------------
+resultado 	 =           1073741824 (sgn)
+		 = 0x          40000000 (hex)
+		 = 0x 00000000 40000000 
+__TEST03__-----------------------------------
+resultado 	 =           2147483648 (sgn)
+		 = 0x          80000000 (hex)
+		 = 0x 00000000 80000000 
+__TEST04__-----------------------------------
+resultado 	 =           4294967296 (sgn)
+		 = 0x         100000000 (hex)
+		 = 0x 00000001 00000000 
+__TEST05__-----------------------------------
+resultado 	 =          34359738352 (sgn)
+		 = 0x         7fffffff0 (hex)
+		 = 0x 00000007 fffffff0 
+__TEST06__-----------------------------------
+resultado 	 =         -34359738368 (sgn)
+		 = 0x  fffffff800000000 (hex)
+		 = 0x fffffff8 00000000 
+__TEST07__-----------------------------------
+resultado 	 =          -4294967296 (sgn)
+		 = 0x  ffffffff00000000 (hex)
+		 = 0x ffffffff 00000000 
+__TEST08__-----------------------------------
+resultado 	 =          -2147483648 (sgn)
+		 = 0x  ffffffff80000000 (hex)
+		 = 0x ffffffff 80000000 
+__TEST09__-----------------------------------
+resultado 	 =          -2147483664 (sgn)
+		 = 0x  ffffffff7ffffff0 (hex)
+		 = 0x ffffffff 7ffffff0 
+__TEST10__-----------------------------------
+resultado 	 =           1600000000 (sgn)
+		 = 0x          5f5e1000 (hex)
+		 = 0x 00000000 5f5e1000 
+__TEST11__-----------------------------------
+resultado 	 =           3200000000 (sgn)
+		 = 0x          bebc2000 (hex)
+		 = 0x 00000000 bebc2000 
+__TEST12__-----------------------------------
+resultado 	 =           4800000000 (sgn)
+		 = 0x         11e1a3000 (hex)
+		 = 0x 00000001 1e1a3000 
+__TEST13__-----------------------------------
+resultado 	 =          32000000000 (sgn)
+		 = 0x         773594000 (hex)
+		 = 0x 00000007 73594000 
+__TEST14__-----------------------------------
+resultado 	 =         -20719476736 (sgn)
+		 = 0x  fffffffb2d05e000 (hex)
+		 = 0x fffffffb 2d05e000 
+__TEST15__-----------------------------------
+resultado 	 =          -1600000000 (sgn)
+		 = 0x  ffffffffa0a1f000 (hex)
+		 = 0x ffffffff a0a1f000 
+__TEST16__-----------------------------------
+resultado 	 =          -3200000000 (sgn)
+		 = 0x  ffffffff4143e000 (hex)
+		 = 0x ffffffff 4143e000 
+__TEST17__-----------------------------------
+resultado 	 =          -4800000000 (sgn)
+		 = 0x  fffffffee1e5d000 (hex)
+		 = 0x fffffffe e1e5d000 
+__TEST18__-----------------------------------
+resultado 	 =         -32000000000 (sgn)
+		 = 0x  fffffff88ca6c000 (hex)
+		 = 0x fffffff8 8ca6c000 
+suma3.s: Mensajes del ensamblador:
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+suma3.s:53: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+__TEST19__-----------------------------------
+resultado 	 =          20719476736 (sgn)
+		 = 0x         4d2fa2000 (hex)
+		 = 0x 00000004 d2fa2000 
+		 
+EJERCICIO 5.4 (media.s)
+
+__TEST01__-----------------------------------
+cociente 	 =           1 	 resto 	 =           8   
+	 = 0x 00000001 	    	 = 0x 00000008
+__TEST02__-----------------------------------
+cociente 	 =          -1 	 resto 	 =          -8   
+	 = 0x ffffffff 	    	 = 0x fffffff8
+__TEST03__-----------------------------------
+cociente 	 =  2147483647 	 resto 	 =           0   
+	 = 0x 7fffffff 	    	 = 0x 00000000
+__TEST04__-----------------------------------
+cociente 	 = -2147483648 	 resto 	 =           0   
+	 = 0x 80000000 	    	 = 0x 00000000
+__TEST05__-----------------------------------
+cociente 	 =          -1 	 resto 	 =           0   
+	 = 0x ffffffff 	    	 = 0x 00000000
+__TEST06__-----------------------------------
+cociente 	 =  2000000000 	 resto 	 =           0   
+	 = 0x 77359400 	    	 = 0x 00000000
+__TEST07__-----------------------------------
+cociente 	 = -1294967296 	 resto 	 =           0   
+	 = 0x b2d05e00 	    	 = 0x 00000000
+__TEST08__-----------------------------------
+cociente 	 = -2000000000 	 resto 	 =           0   
+	 = 0x 88ca6c00 	    	 = 0x 00000000
+media.s: Mensajes del ensamblador:
+media.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+__TEST09__-----------------------------------
+cociente 	 =  1294967296 	 resto 	 =           0   
+	 = 0x 4d2fa200 	    	 = 0x 00000000
+__TEST10__-----------------------------------
+cociente 	 =           1 	 resto 	 =           0   
+	 = 0x 00000001 	    	 = 0x 00000000
+__TEST11__-----------------------------------
+cociente 	 =           1 	 resto 	 =           1   
+	 = 0x 00000001 	    	 = 0x 00000001
+__TEST12__-----------------------------------
+cociente 	 =           1 	 resto 	 =           8   
+	 = 0x 00000001 	    	 = 0x 00000008
+__TEST13__-----------------------------------
+cociente 	 =           1 	 resto 	 =          15   
+	 = 0x 00000001 	    	 = 0x 0000000f
+__TEST14__-----------------------------------
+cociente 	 =           2 	 resto 	 =           0   
+	 = 0x 00000002 	    	 = 0x 00000000
+__TEST15__-----------------------------------
+cociente 	 =          -1 	 resto 	 =           0   
+	 = 0x ffffffff 	    	 = 0x 00000000
+__TEST16__-----------------------------------
+cociente 	 =          -1 	 resto 	 =          -1   
+	 = 0x ffffffff 	    	 = 0x ffffffff
+__TEST17__-----------------------------------
+cociente 	 =          -1 	 resto 	 =          -8   
+	 = 0x ffffffff 	    	 = 0x fffffff8
+__TEST18__-----------------------------------
+cociente 	 =          -1 	 resto 	 =         -15   
+	 = 0x ffffffff 	    	 = 0x fffffff1
+__TEST19__-----------------------------------
+cociente 	 =          -2 	 resto 	 =           0   
+	 = 0x fffffffe 	    	 = 0x 00000000
+
+EJERCICIO 5.5 (media64.s)
+
+__TEST01__-----------------------------------
+cociente 	 =           1 	 resto 	 =           8   
+	 = 0x 00000001 	    	 = 0x 00000008
+cociente 	 =           1 	 resto 	 =           8   
+	 = 0x 0000000000000001 	    	 = 0x 0000000000000008
+__TEST02__-----------------------------------
+cociente 	 =          -1 	 resto 	 =          -8   
+	 = 0x ffffffff 	    	 = 0x fffffff8
+cociente 	 =          -1 	 resto 	 =          -8   
+	 = 0x 00000000ffffffff 	    	 = 0x 00000000fffffff8
+__TEST03__-----------------------------------
+cociente 	 =  2147483647 	 resto 	 =           0   
+	 = 0x 7fffffff 	    	 = 0x 00000000
+cociente 	 =   268435455 	 resto 	 =           0   
+	 = 0x 000000000fffffff 	    	 = 0x 0000000000000000
+__TEST04__-----------------------------------
+cociente 	 = -2147483648 	 resto 	 =           0   
+	 = 0x 80000000 	    	 = 0x 00000000
+cociente 	 =  -268435456 	 resto 	 =           0   
+	 = 0x 00000000f0000000 	    	 = 0x 0000000000000000
+__TEST05__-----------------------------------
+cociente 	 =          -1 	 resto 	 =           0   
+	 = 0x ffffffff 	    	 = 0x 00000000
+cociente 	 =          -1 	 resto 	 =           0   
+	 = 0x 00000000ffffffff 	    	 = 0x 0000000000000000
+__TEST06__-----------------------------------
+cociente 	 =  2000000000 	 resto 	 =           0   
+	 = 0x 77359400 	    	 = 0x 00000000
+cociente 	 =   120951808 	 resto 	 =           0   
+	 = 0x 0000000007359400 	    	 = 0x 0000000000000000
+__TEST07__-----------------------------------
+cociente 	 = -1294967296 	 resto 	 =           0   
+	 = 0x b2d05e00 	    	 = 0x 00000000
+cociente 	 =  -221225472 	 resto 	 =           0   
+	 = 0x 00000000f2d05e00 	    	 = 0x 0000000000000000
+__TEST08__-----------------------------------
+cociente 	 = -2000000000 	 resto 	 =           0   
+	 = 0x 88ca6c00 	    	 = 0x 00000000
+cociente 	 =  -120951808 	 resto 	 =           0   
+	 = 0x 00000000f8ca6c00 	    	 = 0x 0000000000000000
+media64.s: Mensajes del ensamblador:
+media64.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:62: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media64.s:65: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+__TEST09__-----------------------------------
+cociente 	 =  1294967296 	 resto 	 =           0   
+	 = 0x 4d2fa200 	    	 = 0x 00000000
+cociente 	 =   221225472 	 resto 	 =           0   
+	 = 0x 000000000d2fa200 	    	 = 0x 0000000000000000
+__TEST10__-----------------------------------
+cociente 	 =           1 	 resto 	 =           0   
+	 = 0x 00000001 	    	 = 0x 00000000
+cociente 	 =           1 	 resto 	 =           0   
+	 = 0x 0000000000000001 	    	 = 0x 0000000000000000
+__TEST11__-----------------------------------
+cociente 	 =           1 	 resto 	 =           1   
+	 = 0x 00000001 	    	 = 0x 00000001
+cociente 	 =           1 	 resto 	 =           1   
+	 = 0x 0000000000000001 	    	 = 0x 0000000000000001
+__TEST12__-----------------------------------
+cociente 	 =           1 	 resto 	 =           8   
+	 = 0x 00000001 	    	 = 0x 00000008
+cociente 	 =           1 	 resto 	 =           8   
+	 = 0x 0000000000000001 	    	 = 0x 0000000000000008
+__TEST13__-----------------------------------
+cociente 	 =           1 	 resto 	 =          15   
+	 = 0x 00000001 	    	 = 0x 0000000f
+cociente 	 =           1 	 resto 	 =          15   
+	 = 0x 0000000000000001 	    	 = 0x 000000000000000f
+__TEST14__-----------------------------------
+cociente 	 =           2 	 resto 	 =           0   
+	 = 0x 00000002 	    	 = 0x 00000000
+cociente 	 =           2 	 resto 	 =           0   
+	 = 0x 0000000000000002 	    	 = 0x 0000000000000000
+__TEST15__-----------------------------------
+cociente 	 =          -1 	 resto 	 =           0   
+	 = 0x ffffffff 	    	 = 0x 00000000
+cociente 	 =          -1 	 resto 	 =           0   
+	 = 0x 00000000ffffffff 	    	 = 0x 0000000000000000
+__TEST16__-----------------------------------
+cociente 	 =          -1 	 resto 	 =          -1   
+	 = 0x ffffffff 	    	 = 0x ffffffff
+cociente 	 =          -1 	 resto 	 =          -1   
+	 = 0x 00000000ffffffff 	    	 = 0x 00000000ffffffff
+__TEST17__-----------------------------------
+cociente 	 =          -1 	 resto 	 =          -8   
+	 = 0x ffffffff 	    	 = 0x fffffff8
+cociente 	 =          -1 	 resto 	 =          -8   
+	 = 0x 00000000ffffffff 	    	 = 0x 00000000fffffff8
+__TEST18__-----------------------------------
+cociente 	 =          -1 	 resto 	 =         -15   
+	 = 0x ffffffff 	    	 = 0x fffffff1
+cociente 	 =          -1 	 resto 	 =         -15   
+	 = 0x 00000000ffffffff 	    	 = 0x 00000000fffffff1
+__TEST19__-----------------------------------
+cociente 	 =          -2 	 resto 	 =           0   
+	 = 0x fffffffe 	    	 = 0x 00000000
+cociente 	 =          -2 	 resto 	 =           0   
+	 = 0x 00000000fffffffe 	    	 = 0x 0000000000000000
+

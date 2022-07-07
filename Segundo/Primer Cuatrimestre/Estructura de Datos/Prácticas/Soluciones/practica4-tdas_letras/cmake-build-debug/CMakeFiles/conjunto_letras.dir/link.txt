@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/conjunto_letras.dir/estudiante/src/conjunto_letras.cpp.o CMakeFiles/conjunto_letras.dir/estudiante/src/letters_set.cpp.o -o conjunto_letras 

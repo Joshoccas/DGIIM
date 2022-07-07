@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="practica2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc_doxygen">
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc_doxygen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="barajar">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/barajar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 barajar"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="barajar/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/barajar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 barajar/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="contraste">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/contraste" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 contraste"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="contraste/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/contraste" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 contraste/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="icono">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/icono" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 icono"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="icono/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/icono" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 icono/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="image">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/libimage.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 image"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="image/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/libimage.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 image/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="subimagen">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/subimagen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 subimagen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="subimagen/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/subimagen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 subimagen/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="negativo">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/negativo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 negativo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="negativo/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/negativo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 negativo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zoom">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/zoom" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 zoom"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zoom/fast">
+				<Option output="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/zoom" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica_imagenes/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 zoom/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/barajar.cpp">
+			<Option target="barajar"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/contraste.cpp">
+			<Option target="contraste"/>
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/icono.cpp">
+			<Option target="icono"/>
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/image.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/imageIO.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/imageop.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/negativo.cpp">
+			<Option target="negativo"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/subimagen.cpp">
+			<Option target="subimagen"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/estudiante/src/zoom.cpp">
+			<Option target="zoom"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica_imagenes/Doxyfile.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

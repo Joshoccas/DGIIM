@@ -1,0 +1,130 @@
+/*!  @page eficiencia Estudio de Eficiencia
+
+
+
+## Introducción
+
+Estudiaremos la eficiencia de dos posibles implementaciones del método Image::ShuffleRows().
+Consideraremos la eficiencia en el peor de los casos, utilizando como acotación la notación
+[O-grande](https://es.wikipedia.org/wiki/Notaci%C3%B3n_de_Landau). Este método, como ya se ha explicado, baraja las filas del objeto imagen sobre el que actúa.
+
+Para la Implementación II se han modificado algunos métodos de la clase, de manera que en estos no se supone que img[i+1] == img[i]+cols, es decir, las filas no tienen por qué estar ordenadas
+consecutivamente en memoria.
+Dichos métodos son
+- Image::get_pixel (int k)
+- Image::set_pixel (int k, byte value)
+- Image::Save (const char *file_path)
+
+---
+
+## Análisis teórico
+
+### Implementación I
+
+> `const int p = 9973;`
+>
+> `int newr;`
+>
+> `Image temp(rows,cols);`
+>
+> `for (int r=0; r<rows; r++){`
+>
+>>   `newr = r*p%rows;`
+>>
+>>   `for (int c=0; c<cols;c++)`
+>>
+>>>       `temp.set_pixel(r,c,get_pixel(newr,c));`
+>
+> `}`
+>
+> `Copy(temp);`
+
+Todas las instrucciones simples, a excepción de la llamada a
+Image::Copy(), son O(1). Vemos que hay dos bucles anidados; el bucle interno se ejecutará
+Image::cols veces y el principal Image::rows veces, luego el anidamiento es O(Image::rows *
+Image::cols).
+
+> `void Image::Copy(const Image & orig){`
+>
+>>   `Initialize(orig.rows,orig.cols);`
+>>
+>>   `for (int k=0; k<rows*cols;k++)`
+>>
+>>>       `set_pixel(k,orig.get_pixel(k));`
+> `}`
+
+
+Este método es de orden O(Image::rows * Image::cols), luego la Implementación I es de orden
+__O(Image::rows \* Image::cols)__.
+
+### Implemetación II
+
+> `const int p = 9973;`
+>
+> `byte **aux = new byte * [rows];`
+>
+> `for (int r=0; r<rows; r++)`
+>
+>>  `aux[r] = img[r];`
+>
+> `for (int r=0; r<rows; r++){`
+>
+>>   `int newr = r*p%rows;`
+>>
+>>   `img[r] = aux[newr];`
+>
+> `}`
+>
+> `delete [] aux;`
+>
+> `aux = nullptr;`
+
+Al igual que en la implementación I, todas las instrucciones (sin contar los bucles) son O(1).
+En este caso no encontramos bucles anidados, y los dos bucles que aparecen realizan Image::rows iteraciones. Esta implementación es **O(Image::rows)**.
+
+### Conclusión.
+
+En el caso de las imágenes cuadradas (*rows=cols*), la eficiencia del método sería **O(n²) frente a O(n)** con *n=rows*. Para imágenes pequeñas (*n* pequeño) no supondría mucha diferencia pero a
+mayor número de filas y columnas mayor será la diferencia entre la eficiencia de las implementaciones.
+Luego la Implementación II supone una mejora considerable para la eficiencia general de la clase Image.
+
+---
+
+## Análisis empírico
+
+
+Para poder ver la eficiencia de las dos versiones de Image::ShuffleRows, hemos hecho uso de creareficiencia.cpp, fichero fuente con el que hemos medido los tiempos de ejecución de Image::ShuffleRows
+para 100 casos distintos (imágenes de distintas dimensiones, yendo de menos a más tamaño).
+
+En nuestro caso, hemos tomado matrices de 100 hasta 1000 filas y columnas, es decir, desde tamaño 10000 píxeles hasta 1000000 píxeles (los saltos de filas y columnas se han ido dando de 100 en 100, 
+considerando todas las combinaciones posibles de filas x columnas). En cada una de las 100 pruebas se ha medido el tiempo de ejecución y dichos tiempos han sido recopilados en una hoja de cálculo 
+de Google Drive, sacando a partir de ellos las [gráficas](https://docs.google.com/spreadsheets/d/1seGbphCXKLBInAMUcp3mJmi0btwPEqcl5QBhSaCz7Qk/edit#gid=0) que se pedían
+
+### Implementación I
+
+@image html eficiencia1.png
+
+Aunque para tamaños pequeños el tiempo de ejecución no es demasiado alto, este se dispara conforme las dimensiones de las imágenes van aumentado, como indican las gráficas. Un claro ejemplo es para una imagen 1000x1000,
+en la que el tiempo de espera son 858862 microsegundos, lo cual equivale a 0.86 segundos, una cantidad perceptible por el ser humano. Las imágenes cotidianas suelen ser de mayores dimensiones, 
+lo cual significa que tardaría varios segundos en generar la imagen nueva. Esta implementación, por lo tanto, es insostenible para imágenes de gran tamaño.
+
+### Implementación II
+
+@image html eficiencia2.png
+
+En esta nueva implementación, viendo la línea de tendencia y su ecuación (tiempo frente a distinto nºfilas), vemos que los tiempos son mucho menores. Hemos prescindido de la gráfica en la que la
+variable independiente es el nºcolumnas porque la línea de tendencia indica que es constante, lo cual tiene sentido ya que en el código de la nueva implementación no interviene en ningún momento
+el nºcolumnas. Como en la gráfica para los distintos tamaños interviene el nºcolumnas también, pues tamaño = filas x columnas, hemos prescindido también de esta. En comparación con el ejemplo
+anterior, ahora para una imagen de 1000000 píxeles solo han hecho falta 525 microsegundos, lo que equivale a 0.000525, imperceptible por el ser humano.
+
+## Conclusión
+
+@image html eficiencia3.png
+
+Como prueba final de que la eficiencia de la nueva implementación es claramente mejor que la de la antigua, hemos unido las mismas 3 gráficas creadas para cada una de las implementaciones en
+3 gráficas comparativas. Mientras que la antigua implementación hace que los tiempos se disparen para dimensiones altas, la nueva no lo hace (notemos que en todas las gráficas, las líneas de 
+tendencia de la nueva implementación son horizontales con respecto a las de la antigua). Por lo tanto, el análisis teórico y empírico coinciden, como era de esperar.
+
+
+*/
+

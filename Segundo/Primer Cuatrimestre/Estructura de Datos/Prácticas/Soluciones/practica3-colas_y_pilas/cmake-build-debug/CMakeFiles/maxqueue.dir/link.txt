@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmaxqueue.a CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o
+/usr/bin/ranlib libmaxqueue.a

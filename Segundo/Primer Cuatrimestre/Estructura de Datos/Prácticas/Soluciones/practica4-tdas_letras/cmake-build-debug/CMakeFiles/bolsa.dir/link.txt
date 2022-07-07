@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/bolsa.dir/estudiante/src/bolsa.cpp.o -o bolsa 

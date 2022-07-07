@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o -o contraste  libimage.a 

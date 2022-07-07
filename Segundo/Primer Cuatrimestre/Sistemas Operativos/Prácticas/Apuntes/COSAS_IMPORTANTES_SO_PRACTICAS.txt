@@ -1,0 +1,645 @@
+***********************************************
+
+	COSAS IMPORTANTES EXAMEN SO
+	
+***********************************************
+-------------------------------------------------------------------------------------------------------------------------------
+***************
+|  PRÁCTICA 1 |
+***************
+
+--> CREACIÓN DE USUARIOS Y OPERACIONES:
+
+	--> useradd <nombre_usuario>
+	--> Operaciones sobre el usuario:
+		--> usermod [opción] <nombre_usuario> (para modificar los atributos por defecto del usuario creado)
+			Options:
+  			-c, --comment COMMENT         new value of the GECOS field
+ 		        -d, --home HOME_DIR           new home directory for the user account
+  			-e, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE
+  			-f, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  			-g, --gid GROUP               force use GROUP as new primary group
+ 		        -G, --groups GROUPS           new list of supplementary GROUPS
+ 		        -a, --append                  append the user to the supplemental GROUPS
+                                                     mentioned by the -G option without removing
+                                                     him/her from other groups
+  			-h, --help                    display this help message and exit
+  			-l, --login NEW_LOGIN         new value of the login name
+  			-L, --lock                    lock the user account
+  			-m, --move-home               move contents of the home directory to the
+                                                     new location (use only with -d)
+  			-o, --non-unique              allow using duplicate (non-unique) UID
+  			-p, --password PASSWORD       use encrypted password for the new password
+  			-s, --shell SHELL             new login shell for the user account
+  			-u, --uid UID                 new UID for the user account
+  			-U, --unlock                  unlock the user account
+ 			-Z, --selinux-user            new SELinux user mapping for the user account
+ 			
+ 		--> userdel [opción] <nombre_usuario> (para eliminar una cuenta de usuario, aunque no se borre el directorio /home)
+ 			Options:
+  			-f, --force                   force removal of files,
+                               		       even if not owned by user
+  			-h, --help                    display this help message and exit
+ 		        -r, --remove                  remove home directory and mail spool
+ 		
+		--> passwd <nombre_usuaro> (para la asignación de contraseñas)
+		--> chsh <nombre_usuario> (para cambiar la shell de un usuario)
+		--> RESTRICCIONES DE ENVEJECIMIENTO:
+			--> chage -[opción] [valor] <nombre_usuario>
+				Options:
+				chage -d <último dia del cambio de contraseña> <nombre_usuario>
+				chage -m <minimo nº días para cambiar la contraseña> <nombre_usuario>
+				chage -M <máximo nº días para cambiar la contraseña> <nombre_usuario>
+				chage -W <nº días ant de que la cotraseña expire, siendo informado de ello previamete> <nombre_usuario>
+				chage -I <nº días después de que la contraseña haya expirado> <nombre_usuario>
+				chage -E <fecha en la que la cuenta expira y se desabilita de forma automática> <nombre_usuario>
+				
+	--> su <nombre_usurio> (para cambiar al usuario <nombre_usuario>
+				
+--> CREACIÓN DE GRUPOS Y OPERACIONES:
+
+	--> groupadd <nombre_grupo>
+	--> Operaciones con los grupos:
+		--> groupmod [opción] <nombre_grupo> (para modificar los atributos de un grupo)
+			Options:
+  			-g, --gid GID                 change the group ID to GID
+  			-h, --help                    display this help message and exit
+  			-n, --new-name NEW_GROUP      change the name to NEW_GROUP
+  			-o, --non-unique              allow to use a duplicate (non-unique) GID
+  			-p, --password PASSWORD       change the password to this (encrypted)
+                                		       PASSWORD
+               --> groupdel <nombre_grupo> (para eliminar un grupo)
+               --> gpasswd:
+               	--> gpasswd <nombre_grupo> (para asignar una contraseña a un grupo)
+               	--> Options:
+ 			    -a, --add USER                add USER to GROUP
+  			    -d, --delete USER             remove USER from GROUP
+  			    -r, --remove-password         remove the GROUP's password
+			    -R, --restrict                restrict access to GROUP to its members
+  			    -M, --members USER,...        set the list of members of GROUP
+  			    -A, --administrators ADMIN,...
+                               			   set the list of administrators for GROUP
+			    Except for the -A and -M options, the options cannot be combined.
+			    
+	       --> groups [<nombre_usuario>] (para informar de los grupos a los que pertenece un usuario
+	       --> id <nombre_usuario> (lista el identificador del usuarioy los grupos a los que pertenece)
+	       
+
+--> ARCHIVOS Y DIRECTORIOS CON INFORMACIÓN RELEVANTE
+
+	--> /etc/passwd  (Archivo en el que aparece un listado con todos los usuarios del sistema, junto con
+			   el grupo principal al que pertenece, la ruta de su diirectorio priincipal, y la terminal
+			   asociada).
+        --> /etc/group   (Archivo en el que aparece un listado con todos los usuarios del sistema, junto con el
+        		   grupo principal al que pertenece, así como también los grupos suplementarios en los que
+        		   se encuentra).
+        --> /etc/skel 	  (Directorio en el que se guardan los archivos de configuración del shell)
+        --> /etc/shells  (Archivo en el que se encuentran listadas todas las shells permitidas)
+        --> /etc/shadow  (Archivo en el que se guardan las restricciones de envejecimiento de las contraseñas)
+        
+        --> /etc/fstab   (Archivo que contiene información descriptiva acerca de los sistemas de archivos que el
+        		   sistema puede montar). También muestra el mismo tipo de informacón /etc/matb
+        		   Estructura de este archivo:
+        		   
+        		   <file system>    <mount_point>    <type>    <options>   <dump>    <pass>
+        		   	 |		   |		 |		       |	   |
+        		    (número que      (directorio     (tipo              (frecuencia  (orden en
+        		    identifica el      punto de        SA)		   copia de	que fsck realizará
+        		    archivo especial)  montaje)			   seguridad)   comprobaciones de los SAs)
+        		    
+        		   Lo interesante de aquí son las opciones:
+        		   
+        		   	--> rw: Lectura y escritura
+        		   	--> ro: Sólo lectua
+        		   	--> suid/nosuid: Montar automáticamente o no
+        		   	--> exec/noexec: Permitir la ejecución de ficheros o no
+        		   	--> usrquota/grquota: Cuotas de usuario y de grupo
+        		   	--> defaults = rw, suid, dev, exec, auto, nouser, async
+        		   	--> user, users, ownes: Permitir a los usuarios montar un sistema de archivos
+        		   	--> uid=500, gid=100 Propietario y grupo de los archivos del SA
+        		   	--> umask: Máscara para aplicar los permisos a los archivos
+        		   	 
+        --> /proc/filesystems (Archivo que enumera los tipos de sistemas de archivos que hay disponibles)
+        --> /pro/mounts  (Archivo que muestra los sistemas de archivos montados actualmente)
+        
+--------------------------------------------------------------------------------------------------------------------------------------
+***************
+|  PRÁCTICA 2 |
+***************
+
+--> CREACIÓN DE UN DISPOSITIVO VIRTUAL /dev/loop
+
+	--> mknod /dev/loop? b 7 ?
+	
+--> CREACIÓN DE UN ARCHIVO DE X MB
+
+	--> dd if=/dev/zero of=/root/nombre_archivo bs=?k count=? (aquí ya se pone 100, 1000, 10000, según sea bs)
+	
+--> ASOCIACIÓN DE UN ARCHIVO DE DISPOSITIVO LOOP A LOS ARCHIVOS CREADOS
+
+	--> losetup /dev/loop? /root/nombre_archivo
+	
+--> COMPROBAR LA CONFIGURACIÓN
+
+	--> fdisk -l /dev/loop?
+	
+--> CREACIÓN DE UNA PARTICIÓN:
+
+	--> fdisk /dev/loop?
+	
+	    
+	     [ Tras la ejecución de la orden aparecerá lo siguiente:
+	     
+	     	   ...
+	     	   
+	     	   Command (m for help):   <-- Elegimos la opción n
+	     	   
+	     	   Command action
+  		     e   extended
+   		     p   primary partition (1-4)    <-- Elegimos esta opción (tecleamos p)
+   		     
+   		   Partition number (1-4, default 1):   <-- Elegimos el número de la partición
+   		   
+   		   First sector (2048-29999, default 2048): 
+		   Using default value 2048
+		   Last sector, +sectors or +size{K,M,G} (2048-29999, default 29999): 
+		   Using default value 29999
+		   
+		   Command (m for help):   <-- Elegimos la opción w para guardar
+		   
+		   Si todo ha salido bien tiene que salirnos:
+		   	
+		   The partition table has been altered!
+		   
+	      ]
+		   
+		  
+--> ASIGNACIÓN DE UN SISTEMA DE ARCHIVOS A UNA PARTICIÓN
+
+	--> Construir un sistema de archivos en el dispositivo especificado
+	
+		--> mke2fs -t ext? /dev/loop?  (donde ext? es el sistema de archivos a construir se usan normalmente ext2, ext3 y ext4)
+		
+		--> mke2fs -L LABEL_ext? /dev/loop? (establece una estiqueta de volumen (Volumen LABEL) para la patición)
+		
+		
+--> AJUSTAR LOS PARÁMETROS CONFIGURABLES DE UN SISTEMA DE ARCHIVOS Y COMPROBACIÓN DE ERRORES
+
+	--> tune2fs -l <nombre_dispositivo> (muestra por pantalla el contenido del superbloque del SA)
+	--> tune2fs -c <número máximo de montajes> <nombre_dispositivo> (establece el número máximo de montajes que se puede llegar a 
+		       realizar sin que se realice una comprobación de la consistencia del Sistema de Archivos)
+        --> tune2fs -L (Poner una etiqueta al sistema de archivos)
+        --> fsck (Para las comprobaciones de errores)
+        
+        
+--> MONTAJE DE SISTEMAS DE ARCHIVOS
+
+	--> mount [options] <nombre__dispositivo> <nombre_directorio_montaje>
+	              |
+	    (consultar man mount, mount --help, o info mount)
+	    
+--> GESTOR DE PAQUETES YUM
+
+	--> yum list (Lista los paquetes disponibles en los repositorios para instalar)
+	--> yum list installed (Lista los paquetes instalados)
+	--> yum list updates (Lista los paquetes con actualizaciones disponibles en los repositorios)
+	--> yum install <nombre_paquete> (Instala el paquete especificado)
+	--> yum update (Actualiza los paquetes instalados)
+	--> yum remove <nombre_paquete> (Elimina el paquete especificado)
+	
+--> GESTOR DE PAQUETES RPM
+
+	--> rpm -i <nombre-archivo-paquete> (Para instalar paquetes)
+	--> rpm -e <nombre_paquete> (Para eliminar paquetes)
+	--> rpm -U <nombre-archivo-paquete> (Actualización de descargas de paquetes. Incluy la eliminación de la versión de paquete 
+		   instalada previamentes)
+        --> rpm -qa | grep <parte-nombre-paquete-buscado> | sort (buscar paquetes instalados por su nombre)
+        --> rpm -qi <nombre_paquete> (Muestra información precisa del paquete instalado)
+        --> rpm -V <nombre_paquete> (Verificar la instalación del paquete)     
+        
+--> ADMINISTRACIÓN DE QUOTAS
+
+	--> quota <nombre_usuario> (Asigna una cuota a un usuario)
+	--> repquota <SA> (Estadística de las cuotas de todos los usuarios)
+	
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+***************
+|  PRÁCTICA 3 |
+***************
+		  
+--> ORDEN UPTIME
+
+	--> uptime (Muestra la siguiente información:
+			
+		<hora actual> <tiempo que lleva el sistema en marcha> <nº usuarios conectados> <carga media del sistema en los últimos 1,5,15 min>
+
+	--> w (Muestra la misma información además de lo que está haciendo cada usuario conectado)
+	
+--> ORDENN TIME
+
+	--> time <nombre_programa> (Ejecuta el programa, mide y muestra el tiempo de ejecución del mismo en el siguiente formato:
+	
+	          <tiempo_real (real)> 
+	          <tiempo en modo usuario (user)>
+	          <tiempo en modo supervisor (sys)>
+	
+	--> Cálculo del tiempo de espera: Tiempo_espera = real - user - sys		
+	
+--> ÓRDENES NICE Y RECINE 
+
+	--> nice <valor de prioridad entre -20 y 19> (Para establecer un valor de prioridad a un proceso. Todo usuario puede asignar valores positivos
+	         (restan prioridad, y el root puede todo el rango de valores (positivos y negativos (aumentan prioridad))))
+	--> renice <valor de prioridad> <proceso> (Permite alterar la prioridad de uno o más procesos de ejecución)
+	
+--> ORDEN PSTREE
+
+	--> pstree (Para visualizar el árbol de procesos de ejecución).
+		--> Options:
+		-a, --arguments     show command line arguments
+  		-A, --ascii         use ASCII line drawing characters
+  		-c, --compact       don't compact identical subtrees
+  		-h, --highlight-all highlight current process and its ancestors
+ 	        		    -H PID,
+  		--highlight-pid=PID highlight this process and its ancestors
+  		-G, --vt100         use VT100 line drawing characters
+  		-l, --long          don't truncate long lines
+ 		-n, --numeric-sort  sort output by PID
+  		-p, --show-pids     show PIDs; implies -c
+  		-u, --uid-changes   show uid transitions
+  		-U, --unicode       use UTF-8 (Unicode) line drawing characters
+  		-V, --version       display version information
+  		-Z     show         SELinux security contexts
+  		PID    start at this PID; default is 1 (init)
+  		USER   show only trees rooted at processes of this user
+  		
+--> ORDEN PS
+
+	--> ps  (Muestra la siguiente información:
+		   --> USER: Usuario que lanzó el programa
+		   --> PID: Indentificador del proceso
+		   --> PPID: Indentificador del proceso padre
+		   --> %CPU: Porcentaje entre el tiempo usado realmente y el que lleva en ejecución
+		   --> %MEM: Fracción de memoria consumida
+		   --> VSZ: Tamaño virtual del proceso en KB
+		   --> RSS: Memoria real usado en KB
+		   --> TTY: Terminal asociada al proceso
+		   --> STAT: Estado del proceso: R(ejecución o listo), S(durmiendo), T(parado), Z(zombie), D(durmiendo ininterrumpidamente), N(priodidad>0)
+		   	     <(prioridad alta), s(líder de sesión), l(tiene multihebra), +(proceso foreground), L(páginas bloqueadas en memoria))
+	--> Options:
+	********* simple selection *********  ********* selection by list *********
+	-A all processes                      -C by command name
+	-N negate selection                   -G by real group ID (supports names)
+	-a all w/ tty except session leaders  -U by real user ID (supports names)
+	-d all except session leaders         -g by session OR by effective group name
+	-e all processes                      -p by process ID
+	T  all processes on this terminal     -s processes in the sessions given
+	a  all w/ tty, including other users  -t by tty
+	g  OBSOLETE -- DO NOT USE             -u by effective user ID (supports names)
+	r  only running processes             U  processes for specified users
+	x  processes w/o controlling ttys     t  by tty
+	*********** output format **********  *********** long options ***********
+	-o,o user-defined  -f full            --Group --User --pid --cols --ppid
+	-j,j job control   s  signal          --group --user --sid --rows --info
+	-O,O preloaded -o  v  virtual memory  --cumulative --format --deselect
+	-l,l long          u  user-oriented   --sort --tty --forest --version
+	-F   extra full    X  registers       --heading --no-heading --context
+	                    ********* misc options *********
+	-V,V  show version      L  list format codes  f  ASCII art forest
+	-m,m,-L,-T,H  threads   S  children in sum    -y change -l format
+	-M,Z  security data     c  true command name  -c scheduling class
+	-w,w  wide output       n  numeric WCHAN,UID  -H process hierarchy
+	
+
+--> ORDEN TOP
+
+	--> top (Proporciona una visión continuada de la actividad de un proceso en tiempo real)
+		--> 5 primeras líneas:
+			--> Estadística de la orden uptime
+			--> Estadísticas sobre los procesos del sistema (número total de procesos, procesos en ejecución, durmiendo, parados, en estado zombie)
+			--> Estado actual de la CPU (porcentaje en uso por usuarios, por el sistema, por procesos con valor nice positivo, por procesos esperando
+			    E/S, CPU desocupada, tratando interrucines hardware o software, en espera involuntario por virtualización)
+			--> Memoria (memoria total disponible, usada, libre, cantidad usada en buffers y en memoria caché)
+			--> Espacio swap (swap total disponible, usada, y libre)
+	--> Options:
+		--> r: Cambiar prioridad de un proceso
+		--> k: matar o enviar una señal
+		--> N: ordenar por PID
+		--> p: ordenar por CPU
+		--> n: Cambiar el número de procesos que se muestran
+		--> q: Salir
+		
+--> ORDEN MPSTAT 
+
+	--> mpstat (Muestra estadísticas del procesador del sistema junto con la media global de todos los datos mostrados:
+			--> CPU: Número del procesador
+			--> %user: Porcentaje de uso de la CPU con tareas a nivel de usuario
+			--> %nice: Porcentaje de uso de la CPU con tareas a nivel de usuario con prioridad "nice" (>0)
+			--> %sys: Porcentaje de tiempo de la CPU para tareas del sistema (no incluye el tratamiento de interrupciones)
+			--> %iowait: Porcentaje de tiempo que la CPU estaba "desocupada" mientras que el sistemma tenía pendientes peticiones 
+			             de E/S
+			--> %irq: Porcentaje de tiempo que la CPU gasta con interrupciones hardware
+			--> %soft: Porcentaje de tiempo que la CPU gasta con interrupciones software
+			--> %idle: Porcentaje de tiempo que la CPU estaba "desocupada" y el sistema no tiene peticiones de disco pendientes
+			--> intr/s: Número de interrupciones por segundo recibidas por el procesador
+	--> La sintaxis de la ordenn es mpstat [intervalo][número], donde intervalo es cada cuántos segundos debe mostrar datos y cuántos muestra
+	
+--> ORDEN FREE
+
+	--> free (Con esta orden centramos la monitoriación únicamente en el uso de memoria)
+	
+--> ORDEN vmstat
+
+	--> vmstat <frecuencia> <nº informes> (Para supervisar el sistema mostrando información de memoria pero también acerca de procesos, E/S y CPU
+		Columnas que se muestran:
+			--> us: Programa o peticiones del usuario
+			--> sy: Tareas del sistema
+			--> id: No haciendo nada en absoluto
+			--> r: Cuántos procesos están en cola de ejecución
+			--> wa: Indica que no hay procesos en espacio de intercambio
+			--> so: Indicaría que se está incrementando el espacio de intercambio
+			--> free: Indica que la memoria principal libre se está agotando
+			
+--> ORDEN LS
+
+	--> Options:
+		-a, --all                  no oculta las entradas que comienzan con .
+ 	        -A, --almost-all           no muestra las entradas . y .. implícitas
+     		--author               con -l, imprime el autor de cada fichero
+  		-b, --escape               imprime escapes en estilo C para los caracteres no
+                             gráficos
+      		--block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  		-B, --ignore-backups       do not list implied entries ending with ~
+  		-c                         with -lt: sort by, and show, ctime (time of last
+                               	    modification of file status information);
+                              	    with -l: show ctime and sort by name;
+                               	   otherwise: sort by ctime, newest first
+ 		 -C                         list entries by columns
+      		--color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  		-d, --directory            list directories themselves, not their contents
+  		-D, --dired                generate output designed for Emacs' dired mode
+  		-f                         no ordena, utiliza -aU, no utiliza -ls --color
+ 		-F, --classify             añade un indicador (uno de */=@|) a las entradas
+      		--file-type            similar, pero no añade '*'
+      		--format=PALABRA       across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+     		--full-time            como -l --time-style=full-iso
+  		-g                     como -l, pero no lista el propietario
+      		--group-directories-first
+                             		agrupa directorios antes que los ficheros;
+                               	se puede añadir una opción --sort, pero cualquier
+                               	uso de --sort=none (-U) desactiva la agrupación
+ 		-G, --no-group             in a long listing, don't print group names
+  		-h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      		--si                   likewise, but use powers of 1000 not 1024
+  		-H, --dereference-command-line
+                             		sigue los enlaces simbólicos en la línea de
+                             		órdenes
+     		--dereference-command-line-symlink-to-dir
+                             		sigue cada enlace simbólico en la línea de
+                               	órdenes que apunte a un directorio
+      		--hide=PATRÓN          no lista las entradas implícitas que coinciden
+                               	con el patrón de shell PATRÓN
+                               	(las opciones -a o -A tienen prioridad)
+      		--hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      		--indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  		-i, --inode                print the index number of each file
+  		-I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  		-k, --kibibytes            default to 1024-byte blocks for disk usage;
+                              	    used only with -s and per directory totals
+  		-l                         utiliza un formato de listado largo
+  		-L, --dereference          al mostrar la información de un fichero para un
+                               	    enlace simbólico, muestra la información del
+                               	    fichero al que apunta el enlace en lugar de la
+                               	    del propio enlace
+  		-m                         rellena el ancho con una lista de entradas
+                             separadas por comas
+  		-n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  		-N, --literal              print entry names without quoting
+  		-o                         like -l, but do not list group information
+  		-p, --indicator-style=slash
+                             append / indicator to directories
+  		-q, --hide-control-chars   print ? instead of nongraphic characters
+      		--show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  		-Q, --quote-name           enclose entry names in double quotes
+      		--quoting-style=WORD   use quoting style WORD for entry names:
+                               	literal, locale, shell, shell-always,
+                               	shell-escape, shell-escape-always, c, escape
+                               	(overrides QUOTING_STYLE environment variable)
+  		-r, --reverse              invierte el orden, en su caso
+  		-R, --recursive            muestra los subdirectorios recursivamente
+  		-s, --size                 muestra el tamaño de cada fichero, en bloques
+  		-S                         sort by file size, largest first
+      		--sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               	time (-t), version (-v), extension (-X)
+      		--time=WORD            with -l, show time as WORD instead of default
+                               	modification time: atime or access or use (-u);
+                               	ctime or status (-c); also use specified time
+                               	as sort key if --sort=time (newest first)
+      		--time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  		-t                         ordena por la fecha de modificación, el más
+                               	    reciente primero
+  		-T, --tabsize=COLS         establece los topes de tabulación a cada COLS
+                             		    en lugar de 8
+ 		-u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  		-U                         do not sort; list entries in directory order
+  		-v                         natural sort of (version) numbers within text
+  		-w, --width=COLS           set output width to COLS.  0 means no limit
+  		-x                         list entries by lines instead of by columns
+  		-X                         sort alphabetically by entry extension
+  		-Z, --context              print any security context of each file
+  		-1                         list one file per line.  Avoid '\n' with -q or -b
+      		--help     muestra esta ayuda y finaliza
+      		--version  informa de la versión y finaliza
+
+
+--> ORDEN DF
+
+	--> df [opciones] (Permite visualizar información sobre la capacidad de almacenamiento de un sistema de archivos)
+		
+		--> Options:
+			 -a, --all             include dummy file systems
+  			 -B, --block-size=SIZE  use SIZE-byte blocks
+      			 --direct          show statistics for a file instead of mount point
+      			 --total           produce a grand total
+  			 -h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)
+  			 -H, --si              likewise, but use powers of 1000 not 1024
+  			 -i, --inodes          list inode information instead of block usage
+  			 -k                    like --block-size=1K
+  			 -l, --local           limit listing to local file systems
+      			 --no-sync         do not invoke sync before getting usage info (default)
+  			 -P, --portability     use the POSIX output format
+      			 --sync            invoke sync before getting usage info
+  			 -t, --type=TYPE       limit listing to file systems of type TYPE
+  			 -T, --print-type      print file system type
+  			 -x, --exclude-type=TYPE   limit listing to file systems not of type TYPE
+  			 -v                    (ignored)
+      			 --help     display this help and exit
+      			 --version  output version information and exit
+
+			 Display values are in units of the first available SIZE from --block-size,
+			 and the DF_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+			 Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+
+			 SIZE may be (or may be an integer optionally followed by) one of following:
+			 KB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, Y.
+
+	
+--> ORDEN DU
+
+	--> du [options]<nombre_directorio> (Para ver el espacio en el disco que gasta un directorio de la jerarquía de directorios y todos
+			  sus árboles)
+			  
+		--> Options:
+			-a, --all             write counts for all files, not just directories
+      			--apparent-size   print apparent sizes, rather than disk usage; although
+                          		   the apparent size is usually smaller, it may be
+                          		   larger due to holes in (`sparse') files, internal
+                          		   fragmentation, indirect blocks, and the like
+  			-B, --block-size=SIZE  use SIZE-byte blocks
+  			-b, --bytes           equivalent to `--apparent-size --block-size=1'
+  			-c, --total           produce a grand total
+  			-D, --dereference-args  dereference only symlinks that are listed on the
+                          		       command line
+      			--files0-from=F   summarize disk usage of the NUL-terminated file
+                          		   names specified in file F;
+                          If F is - then read names from standard input
+  			-H                    equivalent to --dereference-args (-D)
+  			-h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)
+      			--si              like -h, but use powers of 1000 not 1024
+  			-k                    like --block-size=1K
+  			-l, --count-links     count sizes many times if hard linked
+  			-m                    like --block-size=1M
+  			-L, --dereference     dereference all symbolic links
+  			-P, --no-dereference  don't follow any symbolic links (this is the default)
+  			-0, --null            end each output line with 0 byte rather than newline
+  			-S, --separate-dirs   do not include size of subdirectories
+  			-s, --summarize       display only a total for each argument
+  			-x, --one-file-system    skip directories on different file systems
+  			-X, --exclude-from=FILE  exclude files that match any pattern in FILE
+      			--exclude=PATTERN    exclude files that match PATTERN
+     			--max-depth=N     print the total for a directory (or file, with --all)
+                         		  only if it is N or fewer levels below the command
+                          line argument;  --max-depth=0 is the same as
+                          --summarize
+      			--time            show time of the last modification of any file in the
+                          		   directory, or any of its subdirectories
+      			--time=WORD       show time as WORD instead of modification time:
+                          		   atime, access, use, ctime or status
+      			--time-style=STYLE  show times using style STYLE:
+                          		  full-iso, long-iso, iso, +FORMAT
+                          		  FORMAT is interpreted like `date'
+      			--help     display this help and exit
+      			--version  output version information and exit
+
+			Display values are in units of the first available SIZE from --block-size,
+			and the DU_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+			Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+
+			SIZE may be (or may be an integer optionally followed by) one of following:
+			KB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, Y.
+	 
+	 
+--> CREACIÓN DE ENLACES
+   		     
+   	--> ENLACES DUROS
+   		--> Un enlace duro es un archivo que apunta al mismo contenido almacenado en disco que el archivo original.
+   	            Por lo tanto los archivos originales y los enlaces duros dispondrán del mismo inodo y consecuentemente ambos
+   	            estarán apuntando hacia el mismo contenido almacenado en el disco duro.Un enlace duro no es más que una forma
+   	            de identificar un contenido almacenado en el disco duro con un nombre distinto al del archivo original.
+   	            Si hacemos un ls -li archivo.txt donde archivo.txt es un archivo que acabamos de crear obtenemos lo siguiente:
+   	            
+   	            6817494 -rw-rw-r-- 1 quintinmr quintinmr 0 oct 16 22:17 archivo.txt
+   	            			|
+   	            			---> Indica que hay solo un archivo/entrada en el sistema que está apuntando al mismo inodo
+   	            			
+   	            Para crear un enlace duro hacia un archivo determinado hacemos:
+   	            
+   	            --> ln <nombre_archivo_creado> <nombre_del_enlace_duro>
+   	            
+   	            Si hacemos de nuevo un ls -li archivo.txt obtenemos:
+   	            
+   	            6817494 -rw-rw-r-- 2 quintinmr quintinmr 0 oct 16 22:17 archivo.txt
+   	            			|
+   	            			---> Indica que hay dos archivos/entradas en el sistema que están apuntando al mismo inodo
+   	            			
+   	--> ENLACES SIMBÓLICOS
+		--> Los enlaces simbólicos apuntan al nombre de un archivo y posteriormente el archivo apunta a un contenido 
+		    almacenado en nuestro disco duro. Cada enlace simbólico dispone de su propio número de inodo y es diferente al 
+		    del archivo original. Por lo tanto podremos crear enlaces simbólicos de archivos y de carpetas aunque estén en 
+		    discos duros diferentes o en particiones diferentes.
+		    Si hacemos un ls -li archivo.txt donde archivo.txt es un archivo que acabamos de crear obtenemos lo siguiente:
+		    
+		    6817494 -rw-rw-r-- 1 quintinmr quintinmr 0 oct 16 22:17 archivo.txt
+		    
+		    Para crear un enlace simbólico hacia un archivo determinado hacemos:
+   	            
+   	            --> ln -s <nombre_archivo_creado> <nombre_del_enlace_simbólico>
+   	            
+   	            Si hacemos de nuevo un ls -li archivo.txt  y otro ls -li softlink (enlace simbólico) obtenemos:
+   	            
+   	            6817518 -rw-rw-r-- 1 quintinmr quintinmr 0 oct 16 22:26 archivo.txt
+   	            
+   	            6817517 lrwxrwxrwx 1 quintinmr quintinmr 11 oct 16 22:26 softlink -> archivo.txt
+   	            
+   	            Observamos que en ambos hay 1 único archivo/entrada apuntando al mismo inodo
+   	           
+
+--> CREACIÓN DE ARCHIVOS ESPECIALES DE DISPOSITIVO
+
+	--> ORDEN MKNOD
+		
+		--> mknod [options]  <nombre_archivo_espacial_dispositivo> <tipo (de  bloques, de caracteres, o FIFO)> <MAJOR> <MINOR> (Para crear un archivo 
+		especial de dispositivo)
+		
+		     --> Options:
+		    	-m, --mode=MODE    set file permission bits to MODE, not a=rw - umask
+  			-Z, --context=CTX  set the SELinux security context of NAME to CTX
+     			--help     display this help and exit
+      			--version  output version information and exit
+
+			Both MAJOR and MINOR must be specified when TYPE is b, c, or u, and they
+			must be omitted when TYPE is p.  If MAJOR or MINOR begins with 0x or 0X,
+			it is interpreted as hexadecimal; otherwise, if it begins with 0, as octal;
+			otherwise, as decimal.  TYPE may be:
+
+  			b      create a block (buffered) special file
+  			c, u   create a character (unbuffered) special file
+  			p      create a FIFO
+		    
+		   
+************************************************************************************************************************************************************************			  	     
+   	            
+   	            
+   	            
+   	            
+   	            
+   	            
+		    
+   	            			
+   	            		
+   	            
+   	            
+   	            			
+   		    
+   		    
+	
+
+			 	       
+	        
+
+                  
+                                		    
+			 
+		
+ 		
+ 			

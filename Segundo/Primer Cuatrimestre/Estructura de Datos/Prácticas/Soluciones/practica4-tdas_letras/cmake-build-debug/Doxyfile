@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 3. Contenedores no lineales - Juego de las Letras"
+OUTPUT_DIRECTORY       = /home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include /home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src /home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/doc
+EXTRACT_PRIVATE	       = NO

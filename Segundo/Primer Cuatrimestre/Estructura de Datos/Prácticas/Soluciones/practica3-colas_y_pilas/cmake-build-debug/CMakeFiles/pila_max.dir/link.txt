@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/pila_max.dir/estudiante/src/pila_max.cpp.o -o pila_max  libmaxstack.a 

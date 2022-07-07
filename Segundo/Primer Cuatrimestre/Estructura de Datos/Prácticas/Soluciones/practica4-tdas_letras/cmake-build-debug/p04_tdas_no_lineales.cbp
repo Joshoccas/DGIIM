@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="p04_tdas_no_lineales"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc_doxygen">
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc_doxygen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="palabras_longitud">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/palabras_longitud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 palabras_longitud"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="palabras_longitud/fast">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/palabras_longitud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 palabras_longitud/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="conjunto_letras">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/conjunto_letras" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 conjunto_letras"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="conjunto_letras/fast">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/conjunto_letras" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 conjunto_letras/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bolsa">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/bolsa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 bolsa"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bolsa/fast">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/bolsa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 bolsa/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cantidad_letras">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/cantidad_letras" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 cantidad_letras"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cantidad_letras/fast">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/cantidad_letras" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 cantidad_letras/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bolsa_letras">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/bolsa_letras" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 bolsa_letras"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bolsa_letras/fast">
+				<Option output="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/bolsa_letras" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 bolsa_letras/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agd3/Desktop/ED/practica4-tdas_letras/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/bolsa.cpp">
+			<Option target="bolsa"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/bolsa_letras.cpp">
+			<Option target="bolsa_letras"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/cantidad_letras.cpp">
+			<Option target="cantidad_letras"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/conjunto_letras.cpp">
+			<Option target="conjunto_letras"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/dictionary.cpp">
+			<Option target="palabras_longitud"/>
+			<Option target="cantidad_letras"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/letters_bag.cpp">
+			<Option target="bolsa_letras"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/letters_set.cpp">
+			<Option target="conjunto_letras"/>
+			<Option target="cantidad_letras"/>
+			<Option target="bolsa_letras"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/estudiante/src/palabras_longitud.cpp">
+			<Option target="palabras_longitud"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/agd3/Desktop/ED/practica4-tdas_letras/Doxyfile.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

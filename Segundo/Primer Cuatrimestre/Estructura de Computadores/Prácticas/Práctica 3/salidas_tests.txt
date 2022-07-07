@@ -1,0 +1,197 @@
+__OPTIM0__================================================
+__TEST01__------------------------------------------------
+resultado = 4	popcount1 (lenguaje C -       for):        1 us
+resultado = 4	popcount2 (lenguaje C -     while):        1 us
+resultado = 4	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 4	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 4	popcount5 (CS:APP2e 3.49-group 8b):        1 us
+resultado = 4	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 4	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 4	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 4	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 4	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 4
+__TEST02__------------------------------------------------
+resultado = 156	popcount1 (lenguaje C -       for):        2 us
+resultado = 156	popcount2 (lenguaje C -     while):        1 us
+resultado = 156	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 156	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 156	popcount5 (CS:APP2e 3.49-group 8b):        1 us
+resultado = 156	popcount6 (Wikipedia- naive - 32b):        1 us
+resultado = 156	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 156	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 156	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 156	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 156
+__TEST03__------------------------------------------------
+resultado = 116	popcount1 (lenguaje C -       for):        1 us
+resultado = 116	popcount2 (lenguaje C -     while):        1 us
+resultado = 116	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 116	popcount4 (leng.ASM-body while 3i):        1 us
+resultado = 116	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 116	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 116	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 116	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 116	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 116	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 116
+__TEST04__------------------------------------------------
+resultado = 10485760	popcount1 (lenguaje C -       for):   154388 us
+resultado = 10485760	popcount2 (lenguaje C -     while):    50453 us
+resultado = 10485760	popcount3 (leng.ASM-body while 4i):     9896 us
+resultado = 10485760	popcount4 (leng.ASM-body while 3i):    10310 us
+resultado = 10485760	popcount5 (CS:APP2e 3.49-group 8b):    18612 us
+resultado = 10485760	popcount6 (Wikipedia- naive - 32b):     5247 us
+resultado = 10485760	popcount7 (Wikipedia- naive -128b):     2484 us
+resultado = 10485760	popcount8 (asm SSE3 - pshufb 128b):      627 us
+resultado = 10485760	popcount9 (asm SSE4- popcount 32b):     3399 us
+resultado = 10485760	popcount10(asm SSE4- popcount128b):      743 us
+calculado = 10485760
+__OPTIMg__================================================
+__TEST01__------------------------------------------------
+resultado = 4	popcount1 (lenguaje C -       for):        0 us
+resultado = 4	popcount2 (lenguaje C -     while):        0 us
+resultado = 4	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 4	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 4	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 4	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 4	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 4	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 4	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 4	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 4
+__TEST02__------------------------------------------------
+resultado = 156	popcount1 (lenguaje C -       for):        0 us
+resultado = 156	popcount2 (lenguaje C -     while):        0 us
+resultado = 156	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 156	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 156	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 156	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 156	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 156	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 156	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 156	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 156
+__TEST03__------------------------------------------------
+resultado = 116	popcount1 (lenguaje C -       for):        0 us
+resultado = 116	popcount2 (lenguaje C -     while):        1 us
+resultado = 116	popcount3 (leng.ASM-body while 4i):        1 us
+resultado = 116	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 116	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 116	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 116	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 116	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 116	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 116	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 116
+__TEST04__------------------------------------------------
+resultado = 10485760	popcount1 (lenguaje C -       for):    50253 us
+resultado = 10485760	popcount2 (lenguaje C -     while):     9186 us
+resultado = 10485760	popcount3 (leng.ASM-body while 4i):     9868 us
+resultado = 10485760	popcount4 (leng.ASM-body while 3i):    13292 us
+resultado = 10485760	popcount5 (CS:APP2e 3.49-group 8b):     5579 us
+resultado = 10485760	popcount6 (Wikipedia- naive - 32b):     2917 us
+resultado = 10485760	popcount7 (Wikipedia- naive -128b):     1480 us
+resultado = 10485760	popcount8 (asm SSE3 - pshufb 128b):      403 us
+resultado = 10485760	popcount9 (asm SSE4- popcount 32b):      622 us
+resultado = 10485760	popcount10(asm SSE4- popcount128b):      254 us
+calculado = 10485760
+__OPTIM1__================================================
+__TEST01__------------------------------------------------
+resultado = 4	popcount1 (lenguaje C -       for):        0 us
+resultado = 4	popcount2 (lenguaje C -     while):        0 us
+resultado = 4	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 4	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 4	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 4	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 4	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 4	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 4	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 4	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 4
+__TEST02__------------------------------------------------
+resultado = 156	popcount1 (lenguaje C -       for):        1 us
+resultado = 156	popcount2 (lenguaje C -     while):        0 us
+resultado = 156	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 156	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 156	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 156	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 156	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 156	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 156	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 156	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 156
+__TEST03__------------------------------------------------
+resultado = 116	popcount1 (lenguaje C -       for):        0 us
+resultado = 116	popcount2 (lenguaje C -     while):        0 us
+resultado = 116	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 116	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 116	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 116	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 116	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 116	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 116	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 116	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 116
+__TEST04__------------------------------------------------
+resultado = 10485760	popcount1 (lenguaje C -       for):    42943 us
+resultado = 10485760	popcount2 (lenguaje C -     while):    10075 us
+resultado = 10485760	popcount3 (leng.ASM-body while 4i):     9640 us
+resultado = 10485760	popcount4 (leng.ASM-body while 3i):    10444 us
+resultado = 10485760	popcount5 (CS:APP2e 3.49-group 8b):     5489 us
+resultado = 10485760	popcount6 (Wikipedia- naive - 32b):     2714 us
+resultado = 10485760	popcount7 (Wikipedia- naive -128b):     1449 us
+resultado = 10485760	popcount8 (asm SSE3 - pshufb 128b):      421 us
+resultado = 10485760	popcount9 (asm SSE4- popcount 32b):      602 us
+resultado = 10485760	popcount10(asm SSE4- popcount128b):      273 us
+calculado = 10485760
+__OPTIM2__================================================
+__TEST01__------------------------------------------------
+resultado = 4	popcount1 (lenguaje C -       for):        0 us
+resultado = 4	popcount2 (lenguaje C -     while):        0 us
+resultado = 4	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 4	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 4	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 4	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 4	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 4	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 4	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 4	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 4
+__TEST02__------------------------------------------------
+resultado = 156	popcount1 (lenguaje C -       for):        0 us
+resultado = 156	popcount2 (lenguaje C -     while):        0 us
+resultado = 156	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 156	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 156	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 156	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 156	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 156	popcount8 (asm SSE3 - pshufb 128b):        1 us
+resultado = 156	popcount9 (asm SSE4- popcount 32b):        1 us
+resultado = 156	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 156
+__TEST03__------------------------------------------------
+resultado = 116	popcount1 (lenguaje C -       for):        1 us
+resultado = 116	popcount2 (lenguaje C -     while):        0 us
+resultado = 116	popcount3 (leng.ASM-body while 4i):        0 us
+resultado = 116	popcount4 (leng.ASM-body while 3i):        0 us
+resultado = 116	popcount5 (CS:APP2e 3.49-group 8b):        0 us
+resultado = 116	popcount6 (Wikipedia- naive - 32b):        0 us
+resultado = 116	popcount7 (Wikipedia- naive -128b):        0 us
+resultado = 116	popcount8 (asm SSE3 - pshufb 128b):        0 us
+resultado = 116	popcount9 (asm SSE4- popcount 32b):        0 us
+resultado = 116	popcount10(asm SSE4- popcount128b):        0 us
+calculado = 116
+__TEST04__------------------------------------------------
+resultado = 10485760	popcount1 (lenguaje C -       for):    46691 us
+resultado = 10485760	popcount2 (lenguaje C -     while):    10012 us
+resultado = 10485760	popcount3 (leng.ASM-body while 4i):     9529 us
+resultado = 10485760	popcount4 (leng.ASM-body while 3i):     9995 us
+resultado = 10485760	popcount5 (CS:APP2e 3.49-group 8b):     4690 us
+resultado = 10485760	popcount6 (Wikipedia- naive - 32b):     2375 us
+resultado = 10485760	popcount7 (Wikipedia- naive -128b):     1510 us
+resultado = 10485760	popcount8 (asm SSE3 - pshufb 128b):      380 us
+resultado = 10485760	popcount9 (asm SSE4- popcount 32b):      558 us
+resultado = 10485760	popcount10(asm SSE4- popcount128b):      181 us
+calculado = 10485760
+

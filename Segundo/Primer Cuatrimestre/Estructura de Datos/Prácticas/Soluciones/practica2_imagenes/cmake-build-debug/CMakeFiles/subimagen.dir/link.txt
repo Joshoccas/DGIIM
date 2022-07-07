@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o -o subimagen  libimage.a 

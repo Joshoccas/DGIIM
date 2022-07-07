@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/palabras_longitud.dir/estudiante/src/palabras_longitud.cpp.o CMakeFiles/palabras_longitud.dir/estudiante/src/dictionary.cpp.o -o palabras_longitud 

@@ -1,0 +1,10 @@
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/barajar.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/contraste.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/icono.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/image.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/subimagen.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/negativo.dir
+/home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/CMakeFiles/zoom.dir

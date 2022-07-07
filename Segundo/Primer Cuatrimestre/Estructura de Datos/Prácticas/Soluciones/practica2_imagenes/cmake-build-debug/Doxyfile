@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/agd3/Desktop/ED/practica_imagenes/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/agd3/Desktop/ED/practica_imagenes/estudiante/include /home/agd3/Desktop/ED/practica_imagenes/estudiante/src /home/agd3/Desktop/ED/practica_imagenes/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/agd3/Desktop/ED/practica_imagenes/estudiante/doc
+EXTRACT_PRIVATE        = NO

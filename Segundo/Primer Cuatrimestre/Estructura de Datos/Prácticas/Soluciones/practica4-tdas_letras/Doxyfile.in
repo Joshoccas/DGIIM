@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 3. Contenedores no lineales - Juego de las Letras"
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BINARY_DIR@/doc_doxygen/
+INPUT                  = @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/include @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/src @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/doc
+EXTRACT_PRIVATE	       = NO

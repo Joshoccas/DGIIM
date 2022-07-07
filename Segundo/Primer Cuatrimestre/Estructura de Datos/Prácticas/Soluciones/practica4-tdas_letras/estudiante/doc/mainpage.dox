@@ -1,0 +1,154 @@
+/*! \mainpage Juego de las Letras
+
+# Introducción
+
+--
+
+
+@image html intro.png
+
+
+
+En esta práctica, y las prácticas sucesivas, nos centraremos en el juego conocido como cifras y
+letras. Nos centraremos de momento en la prueba de las letras. Exploraremos el juego de las cifras en las siguientes prácticas, debido a su mayor complejidad.
+
+## PRUEBA DE LAS LETRAS
+
+Similar a juegos como [Scrabble](https://en.wikipedia.org/wiki/Scrabble) o [Apalabrados](https://apalabrados.com/). Consiste en formar la mejor palabra posible, según el criterio elegido, a partir de un conjunto de letras extraídas al azar de una bolsa.
+
+Los dos criterios posibles son los sigueintes:
+- Juego a longitud: la puntuación depende únicamente del número de letras de la palabra, una palabra es mejor cuanto más larga sea.
+- Juego a puntos: a cada letra se le asigna una puntuación, y la puntuación de una palabra será la suma de las puntuaciones de las letras utilizadas.
+
+
+Por ejemplo, dadas las siguientes letras:
+H
+O
+R
+I
+L
+A
+B
+
+
+una solución posible sería LIBRO. El número de letras que se juegan en cada partida se
+decide de antemano, y las letras disponibles pueden repetirse.
+
+
+La práctica consta de 3 ejercicios obligatorios en los que implementaremos los distintos TDAs 
+que necesitamos para poder almacenar de la forma más adecuada la información necesaria para el juego de las letras. Aprenderemos a trabajar con contenedores no lineales.
+
+###TDA LettersSet 
+El tipo de dato LettersSet nos va a permitir almacenar la información de un conjunto de letras, 
+tal y como la necesitaremos en una partida de este juego.
+
+Para cada letra disponible necesitaremos saber:
+- Número total de repeticiones de la letra
+- Puntuación que nos aporta al utilizarla en una palabra
+
+Utilizamos como contenedor subyacente un map (ya implementado 
+en la STL), las claves serán cada una de las letras, y el valor un struct que contenga la información para cada una de ellas:
+
+>	struct LetterInfo {
+>
+>>		int repetitions;
+>>
+>>		int score;
+>
+>	}
+
+
+###TDA Bag
+Para el TDA LettersBag necesitaremos construir un contenedor adecuado, que nos permita extraer 
+las letras aleatoriamente y sin reemplazamiento. Crearemos el TDA Bag utilizando templates, 
+así podremos utilizar este contenedor como una bolsa de datos de cualquier tipo que soporte las funciones escogidas en nuestra implementación.
+Tendrá como dato miembro un vector dinámico (clase vector de la STL).
+
+###TDA LettersBag
+Se trata de un tipo de dato abstracto que nos va a permitir seleccionar las letras disponibles en una partida del juego, como si las sacásemos de una bolsa en la que están todas las fichas.
+Extraemos aleatoriamente un número determinado de letras.
+Utiliza como contenedor subyacente el TDA Bag, que diseñamos previamente con este propósito.
+
+###TDA Dictionary
+Necesitaremos saber qué palabras son válidas en nuestro juego y cuáles no, para ello creamos el TDA Dictionary. Utilizamos como contenedor subyacente un set (implementado en la STL), que se 
+ajusta a las características que buscamos para nuestro diccionario. Consistirá en un set de strings de manera que:
+- Los elementos están ordenados por orden alfabético.
+- Los elementos no se repiten.
+
+
+
+
+# Ejecutables
+
+--
+
+Hemos implementado distintos ejecutables que comprueban el correcto funcionamiento de los TDAs creados.
+Los explicamos a continuación:
+
+### Conjunto de letras
+Este programa prueba el funcionamiento del TDA LettersSet. Recibirá como argumentos la ruta al archivo con información sobre el conjunto de letras y una palabra, calculará la puntuación de 
+dicha palabra y la imprimirá por pantalla.
+
+> __conjunto_letras.cpp__ \<Ruta\> \<Palabra\>
+@pre El string pasado como segundo argumento debe ser una palabra válida
+@param <Ruta> Ruta al archivo con información sobre el conjunto de letras
+@param <Palabra> Palabra de la que calcular la puntuación
+
+@image html conjunto_letras.png
+
+
+### Bolsa
+Este programa prueba el funcionamiento del TDA Bag. Recibirá como argumentos una letra
+- I - trabajaremos con una bolsa de enteros (int)
+- C - trabajaremos con una bolsa de caracteres (char)
+y una lista de enteros o caracteres (según corresponda); esos elementos se meterán en la bolsa y se extraerán aleatoriamente, imprimiéndolos por pantalla, hasta que esta quede vacía.
+
+> __bolsa.cpp__ \<Letra\> \<Lista\>
+Podrá haber tantos argumentos como quiera el usuario, ya que Lista no hace referencia a un argumento sino a una lista de estos.
+@pre La letra debe ser una C o una I
+@pre El tipo de los elementos de la lista debe tener concordancia con la letra primer argumento
+@param <Letra> Letra que indica el tipo de datos que introduciremos en la bolsa
+@param <Lista> Lista de elementos a introducir y sacar de la bolsa
+
+@image html bolsa.png
+
+### Bolsa de letras
+Este programa prueba el funcionamiento del TDA LettersBag. Recibirá como argumento la ruta a un archivo que contendrá la información necesaria para rellenar un LettersSet. El programa crea un 
+conjunto de letras (LettersSet), lo rellena con la información leída del archivo cuya ruta hemos pasado como argumento, crea una bolsa de letras (LettersBag) y la rellena con la información 
+del conjunto de letras anterior. Por último extrae aleatoriamente todas las letras de la bolsa de letras y las imprime por pantalla.
+
+> __bolsa_letras.cpp__ \<Ruta\>
+@param <Ruta> Ruta al archivo con información sobre el conjunto de letras
+
+@image html bolsa_letras.png
+
+### Palabras de x longitud
+Este programa prueba el funcionamiento del TDA Dictionary. Recibe como argumentos la ruta a un fichero con las palabras de un diccionario y un entero que representa la longitud de las 
+palabras que buscamos. Construye un Dictionary con las palabras del fihcero indicado por el primer argumento, extrae del diccionario las palabras de la longitud que buscamos y las imprime por pantalla
+
+> __palabras_longitud.cpp__ \<Ruta\> \<Longitud\>
+@param <Ruta> Ruta al archivo con palabras para el diccionario
+@param <Longitud> Entero que indica la longitud de las palabras buscadas
+
+@image html palabras_longitud.png
+
+###Cantidad de letras
+Este programa prueba el funcionamiento del TDA Dictionary. Recibe como argumentos la ruta a un fichero con las palabras de un diccionario y la ruta a un fichero de letras. Construye un 
+Dictionary con el fichero de palabras y un LettersSet con el fichero de letras, e imprime por pantalla, para cada letra en el LettersSet, el número de ocurrencias de la letra en el 
+diccionario y su frecuencia relativa (número total de ocurrencias de la letra entre el número total de letras en el diccionario).
+
+> __cantidad_letras.cpp__ \<RutaPalabras\> \<RutaLetras\>
+@param <RutaPalabras> Ruta al archivo con palabras para el diccionario
+@param <RutaLetras> Ruta al archivo con letras para el conjunto de letras
+
+@image html cantidad_letras.png
+
+
+
+
+
+
+
+
+
+*/

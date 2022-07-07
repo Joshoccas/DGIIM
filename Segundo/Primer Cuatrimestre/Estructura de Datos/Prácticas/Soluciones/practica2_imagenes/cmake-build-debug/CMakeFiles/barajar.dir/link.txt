@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o -o barajar  libimage.a 

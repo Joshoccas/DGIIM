@@ -1,0 +1,7 @@
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/maxstack.dir
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/pila_max.dir
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/maxqueue.dir
+/home/agd3/Desktop/ED/practica3-colas_y_pilas/cmake-build-debug/CMakeFiles/cola_max.dir

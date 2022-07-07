@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/cola_max.dir/estudiante/src/cola_max.cpp.o -o cola_max  libmaxqueue.a 

@@ -1,0 +1,104 @@
+/*! \mainpage Práctica 3: TDAs Lineales. Pilas y colas
+
+# Introducción
+
+--
+
+@image html intro.png
+
+Trabajaremos con los TDAs [stack](https://cplusplus.com/reference/stack/stack/) y
+[queue](https://cplusplus.com/reference/queue/queue/) de la [STL](https://ccia.ugr.es/~jfv/ed1/c++/cdrom4/paginaWeb/stl.htm).
+La pila es un contenedor de tipo LIFO (last-in first-out) mientras que la cola es de tipo FIFO (first-in first-out).
+Nos serviremos de estas clases ya implementadas en la [STL](https://ccia.ugr.es/~jfv/ed1/c++/cdrom4/paginaWeb/stl.htm)
+para crear las clases MaxStack (pila con máximo) y MaxQueue (cola con máximo), que nos permitirán obtener el mayor
+valor contenido en ese momento.
+
+Los dos problemas principales que afrontamos son:
+    - poder consultar el elemento máximo en cada momento de la forma más eficiente posible
+    - conseguir recrear una estructura LIFO utilizando una cola como dato miembro y una estructura FIFO teniendo una
+    pila como dato miembro de la clase.
+
+Para llevar a cabo el primer punto creamos el struct element, de manera que en cada posición de los contenedores no
+habrá únicamente un entero con el valor de ese elemento sino un par de valores: el valor del elemento insertado (value)
+y el máximo valor que habrá cuando ese elemento se encuentre en la posición de consulta (max). La solución a este
+problema será distinta en pilas y colas:
+
+### Pila con máximo
+Al ser de tipo LIFO, la inserción de un nuevo elemento no afecta a los máximos de los elementos ya presentes en la pila.
+Sacar el tope de la pila tampoco causará ninguna alteración en el resto de structs.
+
+El máximo del nuevo elemento se calculará como
+> _max = maximo(nuevo, max2)_
+siendo _max2_ el máximo del anterior tope de la pila.
+
+### Cola con máximo
+Al ser de tipo FIFO, los máximos de los elementos ya presentes en la cola sí se ven afectados por la inserción o
+eliminaciónde un elemento.
+
+El máximo del nuevo elemento se calculará como
+> _max = maximo(nuevo, max2)_
+siendo _max2_ el máximo del anterior.
+
+El máximo de cada elemento se actualizaría en todo momento aplicando la siguiente fórmula de atrás hacia adelante en la
+cola.
+> _max = maximo(max, max2)_
+siendo _max2_ el máximo del elemento insertado inmediatamente después.
+
+
+
+
+# Ejecutables
+
+--
+
+## Pila con máximo
+
+Este programa prueba la clase MaxStack. Para ello, creamos un objeto de la clase con el cual
+se trabaja sobre un ejemplo con unos números enteros concretos (nos centraremos en el análisis del ejemplo que el
+test ejecuta).
+
+> __pila_max.cpp__ \<Elementos\> \<Puntos\>
+Se pueden añadir tantos elementos como se quiera e intercalar puntos y elementos.
+@pre Se pueden poner tantos puntos como elementos haya hasta el momento.
+@param <Elementos> Números enteros que se añadirán a la pila
+@param <Puntos> Dan la orden de imprimir en pantalla y sacar de la pila el tope
+
+Dada una secuencia de datos de tipo char, el programa va leyendo uno a uno y realizando operaciones sobre nuestra pila.
+Siempre que se lea un punto ".", se muestra el elemento del tope MaxStack::top() con sus respectivos valor y máximo y se elimina
+haciendo uso de pop(). Si lo que se lee es un entero, se usa push(), introduciendo un nuevo elemento en la pila, cuyo
+valor es el entero leído y cuyo máximo dependerá del máximo del elemento del tope antes de introducir el nuevo elemento.
+
+A continuación mostramos un esquema de cómo funcionaría la pila para el ejemplo ejecutado por el juez, que en este
+caso es 3 2 1 . . . :
+
+@image html max_pila1.png
+
+También queremos mostrar cómo funciona nuestro push a bajo nivel. Para ello, tenemos aquí otro dibujo de cómo sería el
+push del entero 1 en el ejemplo anterior (recordemos que usábamos una cola auxiliar):
+
+@image html max_pila2.png
+
+
+## Cola con máximo
+
+Este programa prueba la clase MaxQueue.
+
+> __cola_max.cpp__ \<Elementos\> \<Puntos\>
+Se pueden añadir tantos elementos como se quiera e intercalar puntos y elementos.
+@pre Se pueden poner tantos puntos como elementos se hayan incluído hasta el momento.
+@param <Elementos> Números enteros que se añadirán a la cola
+@param <Puntos> Dan la orden de imprimir en pantalla y sacar de la cola el elemento al frente
+
+Tomaremos como ejemplo para ver el funcionamiento de la clase la entrada        1 2 3 . . .
+
+@image html max_cola1.png
+
+La cola está implementada tomando como dato miembro una pila, que se trata de un contenedor de tipo LIFO.
+Hemos utilizado un objeto stack auxiliar para conseguir que nuestra clase sea un contenedor de tipo FIFO como
+corresponde a las colas. A continuación queda explicado cómo hemos implementado el método MaxQueue::push()
+para que el primer elemento insertado sea también el primero en salir. Dada la siguiente situación observamos el
+proceso al hacer la llamada pila.push(3)
+
+@image html max_cola2.png
+
+*/

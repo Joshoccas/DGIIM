@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/bolsa_letras.dir/estudiante/src/bolsa_letras.cpp.o CMakeFiles/bolsa_letras.dir/estudiante/src/letters_bag.cpp.o CMakeFiles/bolsa_letras.dir/estudiante/src/letters_set.cpp.o -o bolsa_letras 

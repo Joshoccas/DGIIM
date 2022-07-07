@@ -1,0 +1,3 @@
+/home/joshoc7/Escritorio/DGIIM/Segundo/Primer Cuatrimestre/Estructura de Datos/ejercicio22/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/joshoc7/Escritorio/DGIIM/Segundo/Primer Cuatrimestre/Estructura de Datos/ejercicio22/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joshoc7/Escritorio/DGIIM/Segundo/Primer Cuatrimestre/Estructura de Datos/ejercicio22/cmake-build-debug/CMakeFiles/untitled2.dir
